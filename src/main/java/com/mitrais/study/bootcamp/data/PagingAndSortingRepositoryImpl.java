@@ -79,4 +79,7 @@ public abstract class PagingAndSortingRepositoryImpl<T, ID> implements MyPagingA
 
     @Override @Transactional(readOnly = false)
     public abstract List<T> modify(Map<ID, T> entities);
+
+    @Override @Transactional(readOnly = false)
+    public abstract long delete(Collection<ID> ids);
 }
