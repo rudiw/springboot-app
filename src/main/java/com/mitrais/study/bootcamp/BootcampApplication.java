@@ -1,7 +1,7 @@
 package com.mitrais.study.bootcamp;
 
 import com.mitrais.study.bootcamp.dao.PersonDao;
-import com.mitrais.study.bootcamp.model.Person;
+import com.mitrais.study.bootcamp.model.jpa;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
@@ -22,8 +22,8 @@ public class BootcampApplication {
 		log.info("Application is ready...");
 
 		final PersonDao personDao = context.getBean("personDao", PersonDao.class);
-		final Page<Person> page = personDao.findAll(PageRequest.of(0, 10));
-		for (final Person person : page.getContent()) {
+		final Page<jpa.Person> page = personDao.findAll(PageRequest.of(0, 10));
+		for (final jpa.Person person : page.getContent()) {
 			log.info("Person: {}", person);
 		}
 	}
