@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @author Rudi_W144
  */
 @RestController
-public class WellcomeController {
+public class WelcomeController {
 
     @RequestMapping("/")
     public String helloWorld() {

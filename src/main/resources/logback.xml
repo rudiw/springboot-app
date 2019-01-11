@@ -40,20 +40,22 @@
         <IncludeCallerData>true</IncludeCallerData>
     </appender>
 
-    <!-- LOG everything at INFO level -->
-    <root level="info">
-        <appender-ref ref="RollingFile" />
-        <appender-ref ref="Console" />
-        <appender-ref ref="LogbackClassic"/>
-    </root>
-
     <!-- LOG "com.mitrais.*" at TRACE level -->
     <logger name="com.mitrais" level="DEBUG" additivity="false">
         <appender-ref ref="RollingFile" />
         <appender-ref ref="Console" />
         <appender-ref ref="LogbackClassic"/>
     </logger>
+    <!--https://www.baeldung.com/sql-logging-spring-boot-->
+    <logger name="org.hibernate.SQL" level="DEBUG"/>
+    <logger name="org.hibernate.type.descriptor.sql.BasicBinder" level="TRACE"/>
 
+    <!-- LOG everything at INFO level -->
+    <root level="info">
+        <appender-ref ref="RollingFile" />
+        <appender-ref ref="Console" />
+        <appender-ref ref="LogbackClassic"/>
+    </root>
 
 
 </configuration>

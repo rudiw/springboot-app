@@ -1,4 +1,4 @@
-package com.mitrais.study.bootcamp.data;
+package com.mitrais.study.bootcamp.data.jpa;
 
 /**
  * @author Rudi_W144

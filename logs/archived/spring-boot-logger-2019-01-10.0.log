@@ -452,7 +452,7 @@ Using generated security password: cf71db80-b59c-40cd-935a-2c1dec2eae3b
 2019-01-10 16:17:54,792 INFO org.springframework.boot.StartupInfoLogger [main] Started BootcampApplication in 4.362 seconds (JVM running for 4.901)
 2019-01-10 16:17:54,793 INFO com.mitrais.study.bootcamp.BootcampApplication [main] Application is ready...
 2019-01-10 16:17:54,855 INFO org.hibernate.hql.internal.QueryTranslatorFactoryInitiator [main] HHH000397: Using ASTQueryTranslatorFactory
-2019-01-10 16:17:54,969 DEBUG com.mitrais.study.bootcamp.data.JpaRepositoryBase [main] FindAll Person returned 2 of 2 rows (paged by Page request [number: 0, size 10, sort: UNSORTED])
+2019-01-10 16:17:54,969 DEBUG com.mitrais.study.bootcamp.data.jpa.JpaRepositoryBase [main] FindAll Person returned 2 of 2 rows (paged by Page request [number: 0, size 10, sort: UNSORTED])
 2019-01-10 16:17:54,975 INFO com.mitrais.study.bootcamp.BootcampApplication [main] Person: Person{id=2, name='Apriyani'}
 2019-01-10 16:17:54,976 INFO com.mitrais.study.bootcamp.BootcampApplication [main] Person: Person{id=1, name='Rudi Wijaya'}
 2019-01-10 16:24:00,987 INFO com.mitrais.study.bootcamp.BootcampApplication [main] Starting application...
@@ -495,7 +495,7 @@ Using generated security password: 043d955b-8e8c-4b59-a06b-1821282b8f36
 2019-01-10 16:24:05,320 INFO org.springframework.boot.StartupInfoLogger [main] Started BootcampApplication in 4.155 seconds (JVM running for 4.691)
 2019-01-10 16:24:05,322 INFO com.mitrais.study.bootcamp.BootcampApplication [main] Application is ready...
 2019-01-10 16:24:05,372 INFO org.hibernate.hql.internal.QueryTranslatorFactoryInitiator [main] HHH000397: Using ASTQueryTranslatorFactory
-2019-01-10 16:24:05,479 DEBUG com.mitrais.study.bootcamp.data.JpaRepositoryBase [main] FindAll Person returned 2 of 2 rows (paged by Page request [number: 0, size 10, sort: UNSORTED])
+2019-01-10 16:24:05,479 DEBUG com.mitrais.study.bootcamp.data.jpa.JpaRepositoryBase [main] FindAll Person returned 2 of 2 rows (paged by Page request [number: 0, size 10, sort: UNSORTED])
 2019-01-10 16:24:05,484 INFO com.mitrais.study.bootcamp.BootcampApplication [main] Person: Person{id=2, name='Apriyani'}
 2019-01-10 16:24:05,484 INFO com.mitrais.study.bootcamp.BootcampApplication [main] Person: Person{id=1, name='Rudi Wijaya'}
 2019-01-10 16:24:11,652 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'

@@ -1,9 +1,9 @@
-package com.mitrais.study.bootcamp.data;
+package com.mitrais.study.bootcamp.data.jpa;
 
 import com.google.common.base.Function;
-import com.google.common.base.Supplier;
 import com.google.common.collect.FluentIterable;
 import com.google.common.collect.ImmutableList;
+import com.mitrais.study.bootcamp.data.PagingAndSortingRepositoryImpl;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.data.domain.Page;

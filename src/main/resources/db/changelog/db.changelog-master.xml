@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+    
+    <!--role-->
+    <changeSet id="table_role" author="rudi_wijaya">
+        <createTable tableName="role">
+            <column name="id" type="bigint">
+                <constraints primaryKey="true" />
+            </column>
+            <column name="name" type="varchar(255)">
+                <constraints nullable="false" />
+            </column>
+            <column name="title" type="varchar(255)">
+                <constraints nullable="false" />
+            </column>
+            <column name="description" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="version" type="bigint">
+                <constraints nullable="false" />
+            </column>
+        </createTable>
+
+        <addUniqueConstraint tableName="role" columnNames="name" />
+
+        <createIndex tableName="role" indexName="role_title_index">
+            <column name="title"></column>
+        </createIndex>
+    </changeSet>
+
+    <!--person_roleids-->
+    <changeSet id="table_person_roleids" author="rudiwijaya">
+        <createTable tableName="person_roleids">
+            <column name="person_id" type="bigint">
+                <constraints primaryKey="true" />
+            </column>
+            <column name="roleids" type="bigint">
+                <constraints primaryKey="true" />
+            </column>
+        </createTable>
+    </changeSet>
+    
+    <!--person-->
+    <changeSet id="table_person" author="rudiwijaya">
+        <createTable tableName="person">
+            <column name="id" type="bigint">
+                <constraints primaryKey="true" />
+            </column>
+            <column name="username" type="varchar(255)">
+                <constraints nullable="false" />
+            </column>
+            <column name="name" type="varchar(255)">
+                <constraints nullable="false" />
+            </column>
+            <column name="password" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="version" type="bigint">
+                <constraints nullable="false" />
+            </column>
+            <column name="roleids" type="bigint[]" />
+        </createTable>
+
+        <addUniqueConstraint tableName="person" columnNames="username" />
+
+        <createIndex tableName="role" indexName="person_name_index">
+            <column name="name"></column>
+        </createIndex>
+    </changeSet>
+
+</databaseChangeLog>
