@@ -2386,3 +2386,323 @@ Using generated security password: 898ecddd-a923-4e02-921c-f32682d22e3b
     from
         person person0_ limit ?
 2019-01-11 12:18:59,036 DEBUG com.mitrais.study.bootcamp.data.jpa.JpaRepositoryBase [restartedMain] FindAll Person returned 0 of 0 rows (paged by Page request [number: 0, size 10, sort: UNSORTED])
+2019-01-11 13:17:14,191 INFO com.mitrais.study.bootcamp.BootcampApplication [main] Starting application...
+2019-01-11 13:17:14,410 INFO com.mitrais.study.bootcamp.BootcampApplication [restartedMain] Starting application...
+2019-01-11 13:17:14,757 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting BootcampApplication on MTPC8045 with PID 8496 (D:\git\bootcamp\target\classes started by Rudi_W144 in D:\git\bootcamp)
+2019-01-11 13:17:14,758 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2019-01-11 13:17:14,760 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2019-01-11 13:17:14,819 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-01-11 13:17:14,822 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-01-11 13:17:15,572 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-01-11 13:17:15,648 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 69ms. Found 2 repository interfaces.
+2019-01-11 13:17:16,111 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$982cc4a8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-11 13:17:16,717 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2019-01-11 13:17:16,729 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2019-01-11 13:17:16,736 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2019-01-11 13:17:16,736 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet Engine: Apache Tomcat/9.0.13
+2019-01-11 13:17:16,746 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_191\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Docker\Docker\Resources\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Java\jdk1.8.0_191\bin;C:\apache-maven-3.6.0-bin\apache-maven-3.6.0\bin;C:\PostgreSQL\pg11\bin;C:\Program Files\Git\cmd;C:\Users\Rudi_W144\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\Docker Toolbox;.]
+2019-01-11 13:17:16,834 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2019-01-11 13:17:16,835 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 2011 ms
+2019-01-11 13:17:16,931 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2019-01-11 13:17:17,014 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2019-01-11 13:17:17,498 INFO liquibase.logging.core.Slf4jLogger [restartedMain] SELECT COUNT(*) FROM public.databasechangeloglock
+2019-01-11 13:17:17,499 INFO liquibase.logging.core.Slf4jLogger [restartedMain] SELECT COUNT(*) FROM public.databasechangeloglock
+2019-01-11 13:17:17,501 INFO liquibase.logging.core.Slf4jLogger [restartedMain] SELECT LOCKED FROM public.databasechangeloglock WHERE ID=1
+2019-01-11 13:17:17,516 INFO liquibase.logging.core.Slf4jLogger [restartedMain] Successfully acquired change log lock
+2019-01-11 13:17:17,917 INFO liquibase.logging.core.Slf4jLogger [restartedMain] SELECT MD5SUM FROM public.databasechangelog WHERE MD5SUM IS NOT NULL LIMIT 1
+2019-01-11 13:17:17,918 INFO liquibase.logging.core.Slf4jLogger [restartedMain] SELECT COUNT(*) FROM public.databasechangelog
+2019-01-11 13:17:17,919 INFO liquibase.logging.core.Slf4jLogger [restartedMain] Reading from public.databasechangelog
+2019-01-11 13:17:17,919 INFO liquibase.logging.core.Slf4jLogger [restartedMain] SELECT * FROM public.databasechangelog ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+2019-01-11 13:17:17,932 INFO liquibase.logging.core.Slf4jLogger [restartedMain] Successfully released change log lock
+2019-01-11 13:17:18,019 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-01-11 13:17:18,085 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate Core {5.3.7.Final}
+2019-01-11 13:17:18,086 INFO org.hibernate.cfg.Environment [restartedMain] HHH000206: hibernate.properties not found
+2019-01-11 13:17:18,208 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-01-11 13:17:18,333 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL82Dialect
+2019-01-11 13:17:18,517 INFO org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl [restartedMain] HHH000421: Disabling contextual LOB creation as hibernate.jdbc.lob.non_contextual_creation is true
+2019-01-11 13:17:18,522 INFO org.hibernate.type.BasicTypeRegistry [restartedMain] HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@32612e12
+2019-01-11 13:17:19,114 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-01-11 13:17:19,712 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2019-01-11 13:17:19,771 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-01-11 13:17:19,840 WARN org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration [restartedMain] Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2019-01-11 13:17:20,055 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@353c8c87, org.springframework.security.web.context.SecurityContextPersistenceFilter@457eb41a, org.springframework.security.web.context.SecurityContextPersistenceFilter@2db6fe0f, org.springframework.security.web.header.HeaderWriterFilter@d498d5c, org.springframework.security.web.authentication.logout.LogoutFilter@1d3433cd, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@619f21fc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@24bdd08d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3d97a7df, org.springframework.security.web.session.SessionManagementFilter@7bf3cec8, org.springframework.security.web.access.ExceptionTranslationFilter@5b23aad1, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@e441621]
+2019-01-11 13:17:20,137 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2019-01-11 13:17:20,171 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2019-01-11 13:17:20,182 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Using a shared selector for servlet write/read
+2019-01-11 13:17:20,198 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2019-01-11 13:17:20,200 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started BootcampApplication in 5.785 seconds (JVM running for 6.38)
+2019-01-11 13:17:20,202 INFO com.mitrais.study.bootcamp.BootcampApplication [restartedMain] Application is ready...
+2019-01-11 13:17:20,259 INFO org.hibernate.hql.internal.QueryTranslatorFactoryInitiator [restartedMain] HHH000397: Using ASTQueryTranslatorFactory
+2019-01-11 13:17:20,364 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [restartedMain] 
+    select
+        distinct count(distinct person0_.id) as col_0_0_ 
+    from
+        person person0_
+2019-01-11 13:17:20,388 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [restartedMain] 
+    select
+        distinct person0_.id as id1_0_,
+        person0_.name as name2_0_,
+        person0_.password as password3_0_,
+        person0_.username as username4_0_,
+        person0_.version as version5_0_ 
+    from
+        person person0_ limit ?
+2019-01-11 13:17:20,390 DEBUG com.mitrais.study.bootcamp.data.jpa.JpaRepositoryBase [restartedMain] FindAll Person returned 0 of 0 rows (paged by Page request [number: 0, size 10, sort: UNSORTED])
+2019-01-11 13:17:27,754 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-01-11 13:17:27,754 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2019-01-11 13:17:27,762 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 8 ms
+2019-01-11 13:19:39,205 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-7] Shutting down ExecutorService 'applicationTaskExecutor'
+2019-01-11 13:19:39,206 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-7] Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-01-11 13:19:39,209 INFO com.zaxxer.hikari.HikariDataSource [Thread-7] HikariPool-1 - Shutdown initiated...
+2019-01-11 13:19:39,213 INFO com.zaxxer.hikari.HikariDataSource [Thread-7] HikariPool-1 - Shutdown completed.
+2019-01-11 13:19:39,600 INFO com.mitrais.study.bootcamp.BootcampApplication [restartedMain] Starting application...
+2019-01-11 13:19:39,701 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting BootcampApplication on MTPC8045 with PID 8496 (D:\git\bootcamp\target\classes started by Rudi_W144 in D:\git\bootcamp)
+2019-01-11 13:19:39,702 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2019-01-11 13:19:39,703 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2019-01-11 13:19:39,918 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-01-11 13:19:39,934 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 16ms. Found 2 repository interfaces.
+2019-01-11 13:19:39,988 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$982cc4a8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-11 13:19:40,066 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2019-01-11 13:19:40,067 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2019-01-11 13:19:40,068 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2019-01-11 13:19:40,068 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet Engine: Apache Tomcat/9.0.13
+2019-01-11 13:19:40,081 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2019-01-11 13:19:40,081 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 376 ms
+2019-01-11 13:19:40,109 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Starting...
+2019-01-11 13:19:40,133 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Start completed.
+2019-01-11 13:19:40,293 INFO liquibase.logging.core.Slf4jLogger [restartedMain] SELECT COUNT(*) FROM public.databasechangeloglock
+2019-01-11 13:19:40,294 INFO liquibase.logging.core.Slf4jLogger [restartedMain] SELECT COUNT(*) FROM public.databasechangeloglock
+2019-01-11 13:19:40,294 INFO liquibase.logging.core.Slf4jLogger [restartedMain] SELECT LOCKED FROM public.databasechangeloglock WHERE ID=1
+2019-01-11 13:19:40,297 INFO liquibase.logging.core.Slf4jLogger [restartedMain] Successfully acquired change log lock
+2019-01-11 13:19:40,328 INFO liquibase.logging.core.Slf4jLogger [restartedMain] SELECT MD5SUM FROM public.databasechangelog WHERE MD5SUM IS NOT NULL LIMIT 1
+2019-01-11 13:19:40,329 INFO liquibase.logging.core.Slf4jLogger [restartedMain] SELECT COUNT(*) FROM public.databasechangelog
+2019-01-11 13:19:40,329 INFO liquibase.logging.core.Slf4jLogger [restartedMain] Reading from public.databasechangelog
+2019-01-11 13:19:40,330 INFO liquibase.logging.core.Slf4jLogger [restartedMain] SELECT * FROM public.databasechangelog ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+2019-01-11 13:19:40,337 INFO liquibase.logging.core.Slf4jLogger [restartedMain] Successfully released change log lock
+2019-01-11 13:19:40,362 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-01-11 13:19:40,373 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL82Dialect
+2019-01-11 13:19:40,454 INFO org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl [restartedMain] HHH000421: Disabling contextual LOB creation as hibernate.jdbc.lob.non_contextual_creation is true
+2019-01-11 13:19:40,454 INFO org.hibernate.type.BasicTypeRegistry [restartedMain] HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@32612e12
+2019-01-11 13:19:40,493 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-01-11 13:19:40,640 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2019-01-11 13:19:40,646 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-01-11 13:19:40,649 WARN org.springframework.context.support.AbstractApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Invalid mapping on handler class [com.mitrais.study.bootcamp.controller.PersonController]: public java.lang.String com.mitrais.study.bootcamp.controller.PersonController.helloName(java.lang.String)
+2019-01-11 13:19:40,649 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Shutting down ExecutorService 'applicationTaskExecutor'
+2019-01-11 13:19:40,650 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-01-11 13:19:40,650 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Shutdown initiated...
+2019-01-11 13:19:40,655 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Shutdown completed.
+2019-01-11 13:19:40,657 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Stopping service [Tomcat]
+2019-01-11 13:19:40,664 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [restartedMain] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-01-11 13:19:40,667 ERROR org.springframework.boot.SpringApplication [restartedMain] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Invalid mapping on handler class [com.mitrais.study.bootcamp.controller.PersonController]: public java.lang.String com.mitrais.study.bootcamp.controller.PersonController.helloName(java.lang.String)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1745)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:576)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:846)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:863)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.mitrais.study.bootcamp.BootcampApplication.main(BootcampApplication.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Invalid mapping on handler class [com.mitrais.study.bootcamp.controller.PersonController]: public java.lang.String com.mitrais.study.bootcamp.controller.PersonController.helloName(java.lang.String)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$0(AbstractHandlerMethodMapping.java:274)
+	at org.springframework.core.MethodIntrospector.lambda$selectMethods$0(MethodIntrospector.java:74)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:589)
+	at org.springframework.core.MethodIntrospector.selectMethods(MethodIntrospector.java:72)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:267)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:252)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:211)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:199)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:164)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1741)
+	... 21 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'name' in value "/${name}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:172)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:124)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:237)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:211)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:175)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:851)
+	at org.springframework.beans.factory.config.EmbeddedValueResolver.resolveStringValue(EmbeddedValueResolver.java:54)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.resolveEmbeddedValuesInPatterns(RequestMappingHandlerMapping.java:329)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.createRequestMappingInfo(RequestMappingHandlerMapping.java:305)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.createRequestMappingInfo(RequestMappingHandlerMapping.java:260)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.getMappingForMethod(RequestMappingHandlerMapping.java:220)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.getMappingForMethod(RequestMappingHandlerMapping.java:60)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$0(AbstractHandlerMethodMapping.java:270)
+	... 31 common frames omitted
+2019-01-11 13:20:02,208 INFO com.mitrais.study.bootcamp.BootcampApplication [restartedMain] Starting application...
+2019-01-11 13:20:02,263 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting BootcampApplication on MTPC8045 with PID 8496 (D:\git\bootcamp\target\classes started by Rudi_W144 in D:\git\bootcamp)
+2019-01-11 13:20:02,264 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2019-01-11 13:20:02,264 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2019-01-11 13:20:02,621 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-01-11 13:20:02,638 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 17ms. Found 2 repository interfaces.
+2019-01-11 13:20:02,696 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$982cc4a8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-11 13:20:02,779 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2019-01-11 13:20:02,780 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2019-01-11 13:20:02,780 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2019-01-11 13:20:02,780 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet Engine: Apache Tomcat/9.0.13
+2019-01-11 13:20:02,793 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2019-01-11 13:20:02,794 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 528 ms
+2019-01-11 13:20:02,820 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-3 - Starting...
+2019-01-11 13:20:02,840 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-3 - Start completed.
+2019-01-11 13:20:02,969 INFO liquibase.logging.core.Slf4jLogger [restartedMain] SELECT COUNT(*) FROM public.databasechangeloglock
+2019-01-11 13:20:02,970 INFO liquibase.logging.core.Slf4jLogger [restartedMain] SELECT COUNT(*) FROM public.databasechangeloglock
+2019-01-11 13:20:02,970 INFO liquibase.logging.core.Slf4jLogger [restartedMain] SELECT LOCKED FROM public.databasechangeloglock WHERE ID=1
+2019-01-11 13:20:02,978 INFO liquibase.logging.core.Slf4jLogger [restartedMain] Successfully acquired change log lock
+2019-01-11 13:20:02,999 INFO liquibase.logging.core.Slf4jLogger [restartedMain] SELECT MD5SUM FROM public.databasechangelog WHERE MD5SUM IS NOT NULL LIMIT 1
+2019-01-11 13:20:03,000 INFO liquibase.logging.core.Slf4jLogger [restartedMain] SELECT COUNT(*) FROM public.databasechangelog
+2019-01-11 13:20:03,001 INFO liquibase.logging.core.Slf4jLogger [restartedMain] Reading from public.databasechangelog
+2019-01-11 13:20:03,001 INFO liquibase.logging.core.Slf4jLogger [restartedMain] SELECT * FROM public.databasechangelog ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+2019-01-11 13:20:03,006 INFO liquibase.logging.core.Slf4jLogger [restartedMain] Successfully released change log lock
+2019-01-11 13:20:03,026 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-01-11 13:20:03,036 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL82Dialect
+2019-01-11 13:20:03,102 INFO org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl [restartedMain] HHH000421: Disabling contextual LOB creation as hibernate.jdbc.lob.non_contextual_creation is true
+2019-01-11 13:20:03,102 INFO org.hibernate.type.BasicTypeRegistry [restartedMain] HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@32612e12
+2019-01-11 13:20:03,135 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-01-11 13:20:03,247 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2019-01-11 13:20:03,251 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-01-11 13:20:03,253 WARN org.springframework.context.support.AbstractApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Invalid mapping on handler class [com.mitrais.study.bootcamp.controller.PersonController]: public java.lang.String com.mitrais.study.bootcamp.controller.PersonController.helloName(java.lang.String)
+2019-01-11 13:20:03,254 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Shutting down ExecutorService 'applicationTaskExecutor'
+2019-01-11 13:20:03,254 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-01-11 13:20:03,254 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-3 - Shutdown initiated...
+2019-01-11 13:20:03,259 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-3 - Shutdown completed.
+2019-01-11 13:20:03,261 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Stopping service [Tomcat]
+2019-01-11 13:20:03,266 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [restartedMain] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-01-11 13:20:03,267 ERROR org.springframework.boot.SpringApplication [restartedMain] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Invalid mapping on handler class [com.mitrais.study.bootcamp.controller.PersonController]: public java.lang.String com.mitrais.study.bootcamp.controller.PersonController.helloName(java.lang.String)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1745)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:576)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:846)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:863)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.mitrais.study.bootcamp.BootcampApplication.main(BootcampApplication.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Invalid mapping on handler class [com.mitrais.study.bootcamp.controller.PersonController]: public java.lang.String com.mitrais.study.bootcamp.controller.PersonController.helloName(java.lang.String)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$0(AbstractHandlerMethodMapping.java:274)
+	at org.springframework.core.MethodIntrospector.lambda$selectMethods$0(MethodIntrospector.java:74)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:589)
+	at org.springframework.core.MethodIntrospector.selectMethods(MethodIntrospector.java:72)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:267)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:252)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:211)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:199)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:164)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1741)
+	... 21 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'name' in value "/${name}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:172)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:124)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:237)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:211)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:175)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:851)
+	at org.springframework.beans.factory.config.EmbeddedValueResolver.resolveStringValue(EmbeddedValueResolver.java:54)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.resolveEmbeddedValuesInPatterns(RequestMappingHandlerMapping.java:329)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.createRequestMappingInfo(RequestMappingHandlerMapping.java:305)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.createRequestMappingInfo(RequestMappingHandlerMapping.java:260)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.getMappingForMethod(RequestMappingHandlerMapping.java:220)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.getMappingForMethod(RequestMappingHandlerMapping.java:60)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$0(AbstractHandlerMethodMapping.java:270)
+	... 31 common frames omitted
+2019-01-11 13:20:56,902 INFO com.mitrais.study.bootcamp.BootcampApplication [restartedMain] Starting application...
+2019-01-11 13:20:56,968 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting BootcampApplication on MTPC8045 with PID 8496 (D:\git\bootcamp\target\classes started by Rudi_W144 in D:\git\bootcamp)
+2019-01-11 13:20:56,969 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2019-01-11 13:20:56,969 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2019-01-11 13:20:57,168 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-01-11 13:20:57,183 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 15ms. Found 2 repository interfaces.
+2019-01-11 13:20:57,226 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$982cc4a8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-11 13:20:57,296 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2019-01-11 13:20:57,297 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2019-01-11 13:20:57,297 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2019-01-11 13:20:57,297 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet Engine: Apache Tomcat/9.0.13
+2019-01-11 13:20:57,310 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2019-01-11 13:20:57,311 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 341 ms
+2019-01-11 13:20:57,335 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-4 - Starting...
+2019-01-11 13:20:57,355 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-4 - Start completed.
+2019-01-11 13:20:57,545 INFO liquibase.logging.core.Slf4jLogger [restartedMain] SELECT COUNT(*) FROM public.databasechangeloglock
+2019-01-11 13:20:57,546 INFO liquibase.logging.core.Slf4jLogger [restartedMain] SELECT COUNT(*) FROM public.databasechangeloglock
+2019-01-11 13:20:57,547 INFO liquibase.logging.core.Slf4jLogger [restartedMain] SELECT LOCKED FROM public.databasechangeloglock WHERE ID=1
+2019-01-11 13:20:57,555 INFO liquibase.logging.core.Slf4jLogger [restartedMain] Successfully acquired change log lock
+2019-01-11 13:20:57,576 INFO liquibase.logging.core.Slf4jLogger [restartedMain] SELECT MD5SUM FROM public.databasechangelog WHERE MD5SUM IS NOT NULL LIMIT 1
+2019-01-11 13:20:57,577 INFO liquibase.logging.core.Slf4jLogger [restartedMain] SELECT COUNT(*) FROM public.databasechangelog
+2019-01-11 13:20:57,578 INFO liquibase.logging.core.Slf4jLogger [restartedMain] Reading from public.databasechangelog
+2019-01-11 13:20:57,578 INFO liquibase.logging.core.Slf4jLogger [restartedMain] SELECT * FROM public.databasechangelog ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+2019-01-11 13:20:57,583 INFO liquibase.logging.core.Slf4jLogger [restartedMain] Successfully released change log lock
+2019-01-11 13:20:57,603 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-01-11 13:20:57,612 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL82Dialect
+2019-01-11 13:20:57,678 INFO org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl [restartedMain] HHH000421: Disabling contextual LOB creation as hibernate.jdbc.lob.non_contextual_creation is true
+2019-01-11 13:20:57,678 INFO org.hibernate.type.BasicTypeRegistry [restartedMain] HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@32612e12
+2019-01-11 13:20:57,710 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-01-11 13:20:57,818 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2019-01-11 13:20:57,821 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-01-11 13:20:57,846 WARN org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration [restartedMain] Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2019-01-11 13:20:57,873 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@79e52a3d, org.springframework.security.web.context.SecurityContextPersistenceFilter@15cf932b, org.springframework.security.web.context.SecurityContextPersistenceFilter@273e3051, org.springframework.security.web.header.HeaderWriterFilter@6c8a2fb1, org.springframework.security.web.authentication.logout.LogoutFilter@10a952f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@73b1ae69, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4efbf009, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4cb3af25, org.springframework.security.web.session.SessionManagementFilter@376f1a3b, org.springframework.security.web.access.ExceptionTranslationFilter@6957b19e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@721053e8]
+2019-01-11 13:20:57,892 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2019-01-11 13:20:57,906 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2019-01-11 13:20:57,907 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Using a shared selector for servlet write/read
+2019-01-11 13:20:57,909 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2019-01-11 13:20:57,910 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started BootcampApplication in 1.006 seconds (JVM running for 224.089)
+2019-01-11 13:20:57,912 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2019-01-11 13:20:57,912 INFO com.mitrais.study.bootcamp.BootcampApplication [restartedMain] Application is ready...
+2019-01-11 13:20:57,919 INFO org.hibernate.hql.internal.QueryTranslatorFactoryInitiator [restartedMain] HHH000397: Using ASTQueryTranslatorFactory
+2019-01-11 13:20:57,921 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [restartedMain] 
+    select
+        distinct count(distinct person0_.id) as col_0_0_ 
+    from
+        person person0_
+2019-01-11 13:20:57,923 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [restartedMain] 
+    select
+        distinct person0_.id as id1_0_,
+        person0_.name as name2_0_,
+        person0_.password as password3_0_,
+        person0_.username as username4_0_,
+        person0_.version as version5_0_ 
+    from
+        person person0_ limit ?
+2019-01-11 13:20:57,925 DEBUG com.mitrais.study.bootcamp.data.jpa.JpaRepositoryBase [restartedMain] FindAll Person returned 0 of 0 rows (paged by Page request [number: 0, size 10, sort: UNSORTED])
+2019-01-11 13:21:13,173 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-01-11 13:21:13,174 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2019-01-11 13:21:13,181 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 6 ms

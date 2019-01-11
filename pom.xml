@@ -45,6 +45,19 @@
 			<artifactId>liquibase-core</artifactId>
 		</dependency>
 
+		<!--javax-->
+		<dependency>
+			<groupId>javax.inject</groupId>
+			<artifactId>javax.inject</artifactId>
+			<version>1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.google.code.findbugs</groupId>
+			<artifactId>jsr305</artifactId>
+			<version>3.0.2</version>
+		</dependency>
+
 		<!--
 			Applications that use spring-boot-devtools automatically restart whenever files on the classpath change.
 			https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#using-boot-devtools-restart-exclude

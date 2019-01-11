@@ -3,6 +3,18 @@ package com.mitrais.study.bootcamp.dao;
 import com.mitrais.study.bootcamp.data.MyPagingAndSortingRepository;
 import com.mitrais.study.bootcamp.model.jpa.Person;
 
+import javax.annotation.Nullable;
+
+/**
+ * @author Rudi_W144
+ */
 public interface PersonDao extends MyPagingAndSortingRepository<Person, Integer> {
 
+    /**
+     *
+     * @param username can be username or email
+     * @return
+     */
+    @Nullable
+    Person findOneByUsername(final String username);
 }
