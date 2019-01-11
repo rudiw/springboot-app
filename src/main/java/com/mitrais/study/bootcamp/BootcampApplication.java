@@ -10,7 +10,6 @@ import org.springframework.context.annotation.Import;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
 @SpringBootApplication
-@EnableWebMvc
 @Import({LiquibaseConfig.class})
 public class BootcampApplication {
 
