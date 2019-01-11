@@ -8,7 +8,7 @@
     <!--role-->
     <changeSet id="table_role" author="rudi_wijaya">
         <createTable tableName="role">
-            <column name="id" type="bigint">
+            <column name="id" type="bigint" autoIncrement="true">
                 <constraints primaryKey="true" />
             </column>
             <column name="name" type="varchar(255)">
@@ -34,11 +34,11 @@
 
     <!--person_roleids-->
     <changeSet id="table_person_roleids" author="rudiwijaya">
-        <createTable tableName="person_roleids">
+        <createTable tableName="person_role_ids">
             <column name="person_id" type="bigint">
                 <constraints primaryKey="true" />
             </column>
-            <column name="roleids" type="bigint">
+            <column name="role_ids" type="bigint">
                 <constraints primaryKey="true" />
             </column>
         </createTable>
@@ -47,7 +47,7 @@
     <!--person-->
     <changeSet id="table_person" author="rudiwijaya">
         <createTable tableName="person">
-            <column name="id" type="bigint">
+            <column name="id" type="bigint" autoIncrement="true">
                 <constraints primaryKey="true" />
             </column>
             <column name="username" type="varchar(255)">

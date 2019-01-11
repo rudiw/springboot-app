@@ -39,6 +39,18 @@ public class Person implements Serializable {
     @CollectionTable
     private Set<Long> roleIds = new HashSet<>();
 
+    public Person() {
+        super();
+    }
+
+    public Person copy(com.mitrais.study.bootcamp.model.rs.Person rs) {
+        this.name = rs.getName();
+        this.password = rs.getRawPassword();
+        this.username = rs.getUsername();
+
+        return this;
+    }
+
     public long getId() {
         return id;
     }
