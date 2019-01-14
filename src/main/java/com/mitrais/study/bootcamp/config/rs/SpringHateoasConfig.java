@@ -14,6 +14,9 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupp
 
 import java.util.List;
 
+/**
+ * @author Rudi_W144
+ */
 @Configuration
 @EnableHypermediaSupport(type={EnableHypermediaSupport.HypermediaType.HAL})
 @EnableEntityLinks

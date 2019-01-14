@@ -3865,3 +3865,145 @@ Consider renaming one of the beans or enabling overriding by setting spring.main
         roleids0_.person_id=?
 2019-01-14 10:05:57,800 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-2] binding parameter [1] as [BIGINT] - [1]
 2019-01-14 10:05:57,801 DEBUG com.mitrais.study.bootcamp.data.jpa.JpaRepositoryBase [http-nio-8080-exec-2] FindAll Person returned 1 of 1 rows (paged by Page request [number: 0, size 10, sort: UNSORTED])
+2019-01-14 10:09:47,138 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-7] Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-01-14 10:09:47,140 INFO com.zaxxer.hikari.HikariDataSource [Thread-7] HikariPool-1 - Shutdown initiated...
+2019-01-14 10:09:47,144 INFO com.zaxxer.hikari.HikariDataSource [Thread-7] HikariPool-1 - Shutdown completed.
+2019-01-14 10:09:47,463 INFO com.mitrais.study.bootcamp.BootcampApplication [restartedMain] Starting application...
+2019-01-14 10:09:47,573 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting BootcampApplication on MTPC8045 with PID 18292 (D:\git\bootcamp\target\classes started by Rudi_W144 in D:\git\bootcamp)
+2019-01-14 10:09:47,574 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2019-01-14 10:09:47,574 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2019-01-14 10:09:47,884 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-01-14 10:09:47,907 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 22ms. Found 2 repository interfaces.
+2019-01-14 10:09:47,966 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7a19ef89] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-14 10:09:47,967 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$f99a3cbb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-14 10:09:48,050 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2019-01-14 10:09:48,051 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2019-01-14 10:09:48,051 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2019-01-14 10:09:48,051 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet Engine: Apache Tomcat/9.0.13
+2019-01-14 10:09:48,065 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2019-01-14 10:09:48,065 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 485 ms
+2019-01-14 10:09:48,093 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Starting...
+2019-01-14 10:09:48,113 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Start completed.
+2019-01-14 10:09:48,247 INFO liquibase.logging.core.Slf4jLogger [restartedMain] SELECT COUNT(*) FROM public.databasechangeloglock
+2019-01-14 10:09:48,249 INFO liquibase.logging.core.Slf4jLogger [restartedMain] SELECT COUNT(*) FROM public.databasechangeloglock
+2019-01-14 10:09:48,249 INFO liquibase.logging.core.Slf4jLogger [restartedMain] SELECT LOCKED FROM public.databasechangeloglock WHERE ID=1
+2019-01-14 10:09:48,252 INFO liquibase.logging.core.Slf4jLogger [restartedMain] Successfully acquired change log lock
+2019-01-14 10:09:48,283 INFO liquibase.logging.core.Slf4jLogger [restartedMain] SELECT MD5SUM FROM public.databasechangelog WHERE MD5SUM IS NOT NULL LIMIT 1
+2019-01-14 10:09:48,284 INFO liquibase.logging.core.Slf4jLogger [restartedMain] SELECT COUNT(*) FROM public.databasechangelog
+2019-01-14 10:09:48,284 INFO liquibase.logging.core.Slf4jLogger [restartedMain] Reading from public.databasechangelog
+2019-01-14 10:09:48,285 INFO liquibase.logging.core.Slf4jLogger [restartedMain] SELECT * FROM public.databasechangelog ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+2019-01-14 10:09:48,291 INFO liquibase.logging.core.Slf4jLogger [restartedMain] Successfully released change log lock
+2019-01-14 10:09:48,316 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-01-14 10:09:48,327 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL82Dialect
+2019-01-14 10:09:48,392 INFO org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl [restartedMain] HHH000421: Disabling contextual LOB creation as hibernate.jdbc.lob.non_contextual_creation is true
+2019-01-14 10:09:48,392 INFO org.hibernate.type.BasicTypeRegistry [restartedMain] HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@7f55dd41
+2019-01-14 10:09:48,434 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-01-14 10:09:48,595 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-01-14 10:09:48,635 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@23be5d85, org.springframework.security.web.context.SecurityContextPersistenceFilter@251a0fe1, org.springframework.security.web.context.SecurityContextPersistenceFilter@18c8db2d, org.springframework.security.web.header.HeaderWriterFilter@4eff088a, org.springframework.security.web.authentication.logout.LogoutFilter@256582, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@47400536, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@71cdee0c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7dbefb2e, org.springframework.security.web.session.SessionManagementFilter@3738c42b, org.springframework.security.web.access.ExceptionTranslationFilter@65874a08, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1d60ee05]
+2019-01-14 10:09:48,646 WARN org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration [restartedMain] Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2019-01-14 10:09:48,673 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2019-01-14 10:09:48,694 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2019-01-14 10:09:48,695 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Using a shared selector for servlet write/read
+2019-01-14 10:09:48,699 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2019-01-14 10:09:48,700 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started BootcampApplication in 1.233 seconds (JVM running for 304.097)
+2019-01-14 10:09:48,702 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2019-01-14 10:09:48,702 INFO com.mitrais.study.bootcamp.BootcampApplication [restartedMain] Application is ready...
+2019-01-14 10:09:58,182 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-11] Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-01-14 10:09:58,184 INFO com.zaxxer.hikari.HikariDataSource [Thread-11] HikariPool-2 - Shutdown initiated...
+2019-01-14 10:09:58,190 INFO com.zaxxer.hikari.HikariDataSource [Thread-11] HikariPool-2 - Shutdown completed.
+2019-01-14 10:09:58,526 INFO com.mitrais.study.bootcamp.BootcampApplication [restartedMain] Starting application...
+2019-01-14 10:09:58,573 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting BootcampApplication on MTPC8045 with PID 18292 (D:\git\bootcamp\target\classes started by Rudi_W144 in D:\git\bootcamp)
+2019-01-14 10:09:58,574 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2019-01-14 10:09:58,575 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2019-01-14 10:09:58,857 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-01-14 10:09:58,880 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 23ms. Found 2 repository interfaces.
+2019-01-14 10:09:58,934 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7a19ef89] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-14 10:09:58,936 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$f99a3cbb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-14 10:09:59,010 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2019-01-14 10:09:59,010 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2019-01-14 10:09:59,011 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2019-01-14 10:09:59,011 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet Engine: Apache Tomcat/9.0.13
+2019-01-14 10:09:59,024 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2019-01-14 10:09:59,024 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 446 ms
+2019-01-14 10:09:59,046 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-3 - Starting...
+2019-01-14 10:09:59,064 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-3 - Start completed.
+2019-01-14 10:09:59,187 INFO liquibase.logging.core.Slf4jLogger [restartedMain] SELECT COUNT(*) FROM public.databasechangeloglock
+2019-01-14 10:09:59,188 INFO liquibase.logging.core.Slf4jLogger [restartedMain] SELECT COUNT(*) FROM public.databasechangeloglock
+2019-01-14 10:09:59,189 INFO liquibase.logging.core.Slf4jLogger [restartedMain] SELECT LOCKED FROM public.databasechangeloglock WHERE ID=1
+2019-01-14 10:09:59,194 INFO liquibase.logging.core.Slf4jLogger [restartedMain] Successfully acquired change log lock
+2019-01-14 10:09:59,215 INFO liquibase.logging.core.Slf4jLogger [restartedMain] SELECT MD5SUM FROM public.databasechangelog WHERE MD5SUM IS NOT NULL LIMIT 1
+2019-01-14 10:09:59,216 INFO liquibase.logging.core.Slf4jLogger [restartedMain] SELECT COUNT(*) FROM public.databasechangelog
+2019-01-14 10:09:59,217 INFO liquibase.logging.core.Slf4jLogger [restartedMain] Reading from public.databasechangelog
+2019-01-14 10:09:59,217 INFO liquibase.logging.core.Slf4jLogger [restartedMain] SELECT * FROM public.databasechangelog ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+2019-01-14 10:09:59,222 INFO liquibase.logging.core.Slf4jLogger [restartedMain] Successfully released change log lock
+2019-01-14 10:09:59,245 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-01-14 10:09:59,258 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL82Dialect
+2019-01-14 10:09:59,322 INFO org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl [restartedMain] HHH000421: Disabling contextual LOB creation as hibernate.jdbc.lob.non_contextual_creation is true
+2019-01-14 10:09:59,322 INFO org.hibernate.type.BasicTypeRegistry [restartedMain] HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@7f55dd41
+2019-01-14 10:09:59,362 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-01-14 10:09:59,493 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-01-14 10:09:59,530 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7d413254, org.springframework.security.web.context.SecurityContextPersistenceFilter@3df99066, org.springframework.security.web.context.SecurityContextPersistenceFilter@265dabfc, org.springframework.security.web.header.HeaderWriterFilter@1d9841d2, org.springframework.security.web.authentication.logout.LogoutFilter@3f51e7d3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@31879ff8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6ecedecb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6406cb89, org.springframework.security.web.session.SessionManagementFilter@2c5fb22b, org.springframework.security.web.access.ExceptionTranslationFilter@14a07da2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@758a9e5e]
+2019-01-14 10:09:59,539 WARN org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration [restartedMain] Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2019-01-14 10:09:59,555 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2019-01-14 10:09:59,567 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2019-01-14 10:09:59,568 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Using a shared selector for servlet write/read
+2019-01-14 10:09:59,571 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2019-01-14 10:09:59,571 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started BootcampApplication in 1.042 seconds (JVM running for 314.968)
+2019-01-14 10:09:59,573 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2019-01-14 10:09:59,573 INFO com.mitrais.study.bootcamp.BootcampApplication [restartedMain] Application is ready...
+2019-01-14 10:10:07,090 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-6] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-01-14 10:10:07,091 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-6] Initializing Servlet 'dispatcherServlet'
+2019-01-14 10:10:07,096 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-6] Completed initialization in 5 ms
+2019-01-14 10:10:07,107 INFO org.hibernate.hql.internal.QueryTranslatorFactoryInitiator [http-nio-8080-exec-6] HHH000397: Using ASTQueryTranslatorFactory
+2019-01-14 10:10:07,109 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-6] 
+    select
+        distinct count(distinct person0_.id) as col_0_0_ 
+    from
+        person person0_
+2019-01-14 10:10:07,116 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-6] 
+    select
+        distinct person0_.id as id1_0_,
+        person0_.name as name2_0_,
+        person0_.password as password3_0_,
+        person0_.username as username4_0_,
+        person0_.version as version5_0_ 
+    from
+        person person0_ limit ?
+2019-01-14 10:10:07,117 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-6] 
+    select
+        roleids0_.person_id as person_i1_1_0_,
+        roleids0_.role_ids as role_ids2_1_0_ 
+    from
+        person_role_ids roleids0_ 
+    where
+        roleids0_.person_id=?
+2019-01-14 10:10:07,118 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-6] binding parameter [1] as [BIGINT] - [1]
+2019-01-14 10:10:07,118 DEBUG com.mitrais.study.bootcamp.data.jpa.JpaRepositoryBase [http-nio-8080-exec-6] FindAll Person returned 1 of 1 rows (paged by Page request [number: 0, size 10, sort: UNSORTED])
+2019-01-14 10:10:07,826 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-4] 
+    select
+        distinct count(distinct person0_.id) as col_0_0_ 
+    from
+        person person0_
+2019-01-14 10:10:07,828 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-4] 
+    select
+        distinct person0_.id as id1_0_,
+        person0_.name as name2_0_,
+        person0_.password as password3_0_,
+        person0_.username as username4_0_,
+        person0_.version as version5_0_ 
+    from
+        person person0_ limit ?
+2019-01-14 10:10:07,829 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-4] 
+    select
+        roleids0_.person_id as person_i1_1_0_,
+        roleids0_.role_ids as role_ids2_1_0_ 
+    from
+        person_role_ids roleids0_ 
+    where
+        roleids0_.person_id=?
+2019-01-14 10:10:07,829 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-4] binding parameter [1] as [BIGINT] - [1]
+2019-01-14 10:10:07,830 DEBUG com.mitrais.study.bootcamp.data.jpa.JpaRepositoryBase [http-nio-8080-exec-4] FindAll Person returned 1 of 1 rows (paged by Page request [number: 0, size 10, sort: UNSORTED])
