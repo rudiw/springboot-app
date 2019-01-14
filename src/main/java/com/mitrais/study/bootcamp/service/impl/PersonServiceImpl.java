@@ -110,4 +110,16 @@ public class PersonServiceImpl implements PersonService {
         });
         return execute;
     }
+
+    @Override
+    public boolean remove(final String username) {
+        final Boolean execute = txTemplate.execute(new TransactionCallback<Boolean>() {
+            @Override
+            public Boolean doInTransaction(TransactionStatus status) {
+                return personDao.deleteByUsername(username);
+            }
+        });
+
+        return execute;
+    }
 }

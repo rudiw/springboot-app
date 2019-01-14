@@ -5,7 +5,6 @@ import com.mitrais.study.bootcamp.service.impl.PersonServiceImpl;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.crypto.password.PasswordEncoder;
-import org.springframework.security.web.server.util.matcher.PathPatternParserServerWebExchangeMatcher;
 import org.springframework.transaction.PlatformTransactionManager;
 
 import javax.inject.Inject;

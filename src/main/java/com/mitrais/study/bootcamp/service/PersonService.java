@@ -5,7 +5,6 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
 import javax.annotation.Nullable;
-import javax.validation.constraints.Null;
 
 public interface PersonService {
 
@@ -17,5 +16,7 @@ public interface PersonService {
     Person add(final Person upPerson);
 
     Person modify(final String username, final Person upPerson);
+
+    boolean remove(final String username);
 
 }

@@ -101,5 +101,22 @@ public class PersonController {
         }
     }
 
+    @RequestMapping(value = "/remove/{username}", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE, method = RequestMethod.GET)
+    public ResponseEntity<?> remove(@PathVariable(value = "username", required = true) final String upUsername) {
+        try {
+            personService.remove(upUsername);
+
+            return new ResponseEntity<>(HttpStatus.GONE);
+        } catch (Exception e) {
+            log.error(String.format("Failed to add person: %s", e), e);
+            final List<Throwable> causes = Throwables.getCausalChain(e);
+            if (causes.stream().anyMatch((it) -> it instanceof LockAcquisitionException) || causes.stream().anyMatch((it) -> it instanceof ConstraintViolationException)) {
+                return new ResponseEntity<>(HttpStatus.CONFLICT);
+            } else {
+                return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+            }
+        }
+    }
+
 
 }

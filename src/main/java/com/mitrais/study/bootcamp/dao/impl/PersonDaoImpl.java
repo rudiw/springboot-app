@@ -7,6 +7,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Nullable;
 import javax.persistence.NoResultException;
+import javax.persistence.Query;
 import javax.persistence.TypedQuery;
 
 public class PersonDaoImpl extends JpaRepositoryBase<Person, Long> implements PersonDao {
@@ -19,7 +20,7 @@ public class PersonDaoImpl extends JpaRepositoryBase<Person, Long> implements Pe
     @Nullable
     @Override
     @Transactional(readOnly = true)
-    public Person findOneByUsername(String username) {
+    public Person findOneByUsername(final String username) {
         final TypedQuery<Person> tq = em.createQuery("SELECT p " +
                 "FROM " + Person.class.getName() + " p " +
                 "WHERE p.username = :upUsername", Person.class);
@@ -30,5 +31,14 @@ public class PersonDaoImpl extends JpaRepositoryBase<Person, Long> implements Pe
         } catch (NoResultException nre) {
             return null;
         }
+    }
+
+    @Override @Transactional(readOnly = false)
+    public boolean deleteByUsername(final String username) {
+        final Query query = em.createQuery("DELETE FROM " + Person.class.getName() + " p " +
+               "WHERE p.username = :upUsername ");
+        query.setParameter("upUsername", username);
+
+        return query.executeUpdate() == 1;
     }
 }
