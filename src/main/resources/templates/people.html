@@ -27,7 +27,7 @@
             <tr th:each="person : ${people}">
                 <td th:text="${person.username}">Onions</td>
                 <td th:text="${person.name}">2.41</td>
-                <td><a th:href="@{'/secure/person/modify' + ${person.username}}">Modify</a> </td>
+                <td><a th:href="@{'/secure/person/modify/' + ${person.username}}">Modify</a> </td>
             </tr>
         </tbody>
 

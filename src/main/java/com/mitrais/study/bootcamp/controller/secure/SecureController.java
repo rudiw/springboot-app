@@ -1,5 +1,6 @@
 package com.mitrais.study.bootcamp.controller.secure;
 
+import com.google.common.base.Preconditions;
 import com.google.common.base.Throwables;
 import com.mitrais.study.bootcamp.controller.PersonController;
 import com.mitrais.study.bootcamp.model.rs.Person;
@@ -53,25 +54,30 @@ public class SecureController {
         return "person-editor";
     }
 
-    @GetMapping(value = "/secure/person/modify")
+    @GetMapping(value = "/secure/person/modify/{username}")
     public String showModifyPage(final Model model,
-                                 @ModelAttribute(value = "person") Person upPerson) {
+                                 @PathVariable(value = "username", required = true) final String upUsername) {
+
+        final Person person = Preconditions.checkNotNull(personService.findOne(upUsername),
+                "Person must not be null by username '%s'", upUsername);
+
         model.addAttribute("action", FormAction.MODIFY.name());
+        model.addAttribute("person", person);
         return "person-editor";
     }
 
     @PostMapping(value = "/secure/person/save")
     public String add(@ModelAttribute(value = "person") final Person upPerson,
-                      final BindingResult result, final Model model, final HttpServletRequest request) {
+                      final BindingResult result) {
         if (result.hasErrors()) {
-            return "/secure/people/add";
+            return "/secure/person/add";
         }
         try {
             personService.add(upPerson);
 
             return "redirect:/secure/people";
         } catch (Exception e) {
-            log.error(String.format("Failed to signUp person: %s", e), e);
+            log.error(String.format("Failed to add person: %s", e), e);
             final List<Throwable> causes = Throwables.getCausalChain(e);
             if (causes.stream().anyMatch((it) -> it instanceof LockAcquisitionException) || causes.stream().anyMatch((it) -> it instanceof ConstraintViolationException)) {
             } else {
@@ -82,21 +88,21 @@ public class SecureController {
 
     @PutMapping(value = "/secure/person/save")
     public String modify(@ModelAttribute(value = "person") final Person upPerson,
-                         final BindingResult result, final Model model, final HttpServletRequest request) {
+                         final BindingResult result) {
         if (result.hasErrors()) {
-            return "/secure/people/modify";
+            return "/secure/person/modify/" + upPerson.getUsername();
         }
         try {
-            personService.add(upPerson);
+            personService.modify(upPerson.getUsername(), upPerson);
 
             return "redirect:/secure/people";
         } catch (Exception e) {
-            log.error(String.format("Failed to signUp person: %s", e), e);
+            log.error(String.format("Failed to modify person: %s", e), e);
             final List<Throwable> causes = Throwables.getCausalChain(e);
             if (causes.stream().anyMatch((it) -> it instanceof LockAcquisitionException) || causes.stream().anyMatch((it) -> it instanceof ConstraintViolationException)) {
             } else {
             }
-            return "/secure/people/modify";
+            return "/secure/person/modify/" + upPerson.getUsername();
         }
     }
 }

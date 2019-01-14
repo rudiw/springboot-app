@@ -23,7 +23,7 @@
     <form  th:action="@{/secure/person/save}" th:method="${action} != 'MODIFY' ? PUT : POST" modelAttribute="person" th:object="${person}">
         <div class="form-group">
             <label for="username">Username</label>
-            <input type="text" th:field="*{username}" id="username" placeholder="Username" class="form-control">
+            <span th:text="*{username}" id="username" class="form-control"></span>
             <span th:if="${#fields.hasErrors('username')}" th:errors="*{username}"></span>
         </div>
 
