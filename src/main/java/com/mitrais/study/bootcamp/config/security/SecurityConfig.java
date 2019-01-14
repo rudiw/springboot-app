@@ -83,6 +83,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers("/").permitAll()
                 .antMatchers("/secure/**").authenticated()
                 .antMatchers("/admin/**").hasAnyRole("ADMIN")
-                .and().addFilter(new SecurityContextPersistenceFilter()).securityContext();
+                .and().addFilter(new SecurityContextPersistenceFilter()).securityContext()
+                .and().logout().logoutUrl("/logout").logoutSuccessUrl("/");
     }
 }

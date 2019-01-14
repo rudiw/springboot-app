@@ -27,6 +27,9 @@
     <div th:if="${user.authenticated} == true">
         <a href="secure.html" th:href="@{/secure}">Go to Secured Page</a>
     </div>
+    <div th:if="${user.authenticated} == true">
+        <a th:href="@{/logout}">Log Out</a>
+    </div>
 
 
 </div>
