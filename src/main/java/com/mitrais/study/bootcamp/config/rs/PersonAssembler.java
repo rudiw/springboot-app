@@ -1,6 +1,7 @@
-package com.mitrais.study.bootcamp.controller;
+package com.mitrais.study.bootcamp.config.rs;
 
 import com.mitrais.study.bootcamp.config.rs.PersonResource;
+import com.mitrais.study.bootcamp.controller.PersonController;
 import com.mitrais.study.bootcamp.model.rs.Person;
 import org.springframework.hateoas.Link;
 import org.springframework.hateoas.mvc.ControllerLinkBuilder;
