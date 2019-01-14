@@ -32,7 +32,7 @@ public abstract class PagingAndSortingRepositoryImpl<T, ID> implements MyPagingA
 
     @Override @Transactional(readOnly = false)
     public <S extends T> Iterable<S> saveAll(Iterable<S> iterable){
-        throw new UnsupportedOperationException(String.format("Please use #add or #modify methods!!!"));
+        throw new UnsupportedOperationException(String.format("Please use #signUp or #modify methods!!!"));
     };
 
     @Override @Transactional(readOnly = true)

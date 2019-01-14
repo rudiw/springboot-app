@@ -13,18 +13,9 @@
 <body>
 
 <div class="container">
-    Index Web Page
+    Secured Index after login :).
 
-    <div th:if="${user.authenticated} == false">
-        <a href="sign-up.html" th:href="@{/signup}">Sign Up</a>
-    </div>
-    <div th:if="${user.authenticated} == false">
-        <a href="sign-in.html" th:href="@{/signin}">Sign In</a>
-    </div>
-    <div th:if="${user.authenticated} == true">
-        <span th:text="'Hello ' + ${user.username}"></span>
-    </div>
-
+    <a href="people.html" th:href="@{/secure/people}">Show People</a>
 
 </div>
 

@@ -19,4 +19,7 @@ public interface PersonService {
 
     boolean remove(final String username);
 
+    @Nullable
+    String getUsername(final long id);
+
 }

@@ -1,15 +1,10 @@
 package com.mitrais.study.bootcamp;
 
-import com.mitrais.study.bootcamp.config.db.LiquibaseConfig;
-import com.mitrais.study.bootcamp.config.rs.SpringHateoasConfig;
-import com.mitrais.study.bootcamp.config.web.ThymeleafConfig;
-import com.mitrais.study.bootcamp.service.ServiceConfig;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
-import org.springframework.context.annotation.Import;
 
 @SpringBootApplication
 public class BootcampApplication {

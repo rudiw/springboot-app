@@ -13,19 +13,21 @@
 <body>
 
 <div class="container">
-    Index Web Page
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Username</th>
+                <th>Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="person : ${people}">
+                <td th:text="${person.username}">Onions</td>
+                <td th:text="${person.name}">2.41</td>
+            </tr>
+        </tbody>
 
-    <div th:if="${user.authenticated} == false">
-        <a href="sign-up.html" th:href="@{/signup}">Sign Up</a>
-    </div>
-    <div th:if="${user.authenticated} == false">
-        <a href="sign-in.html" th:href="@{/signin}">Sign In</a>
-    </div>
-    <div th:if="${user.authenticated} == true">
-        <span th:text="'Hello ' + ${user.username}"></span>
-    </div>
-
-
+    </table>
 </div>
 
 </body>

@@ -122,4 +122,15 @@ public class PersonServiceImpl implements PersonService {
 
         return execute;
     }
+
+    @Nullable @Override
+    public String getUsername(long id) {
+        final String username = txTemplate.execute(new TransactionCallback<String>() {
+            @Override
+            public String doInTransaction(TransactionStatus status) {
+                return personDao.getUsername(id);
+            }
+        });
+        return username;
+    }
 }

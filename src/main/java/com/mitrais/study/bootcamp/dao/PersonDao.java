@@ -19,4 +19,6 @@ public interface PersonDao extends MyPagingAndSortingRepository<Person, Long> {
     Person findOneByUsername(final String username);
 
     boolean deleteByUsername(final String username);
+
+    @Nullable String getUsername(final long id);
 }
