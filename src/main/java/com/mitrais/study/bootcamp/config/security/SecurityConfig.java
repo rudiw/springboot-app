@@ -1,6 +1,7 @@
 package com.mitrais.study.bootcamp.config.security;
 
 import com.google.common.collect.ImmutableList;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -12,6 +13,8 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.factory.PasswordEncoderFactories;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.security.web.authentication.www.BasicAuthenticationEntryPoint;
+import org.springframework.security.web.authentication.www.BasicAuthenticationFilter;
 import org.springframework.security.web.context.SecurityContextPersistenceFilter;
 
 import javax.inject.Inject;
@@ -28,6 +31,10 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     private PasswordEncoder passwordEncoder;
     @Inject
     private DaoAuthenticationProvider daoAuthProvider;
+    @Inject
+    private AuthenticationManager authMgr;
+    @Autowired
+    private BasicAuthenticationEntryPoint basicAuthEntryPoint;
 
     @Bean
     public PasswordEncoder passwordEncoder() {
@@ -53,9 +60,26 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         auth.authenticationProvider(this.daoAuthProvider);
     }
 
+
+    @Bean
+    public BasicAuthenticationFilter basicAuthFilter() {
+        return new BasicAuthenticationFilter(authMgr, basicAuthEntryPoint);
+    }
+
+    @Bean
+    public BasicAuthenticationEntryPoint basicAuthEntryPoint() {
+        final BasicAuthenticationEntryPoint bauth = new BasicAuthenticationEntryPoint();
+        bauth.setRealmName("MITRAIS_BASIC_AUTH");
+        return bauth;
+    }
+
+
+
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-        http.csrf().disable().authorizeRequests()
+        http.csrf().disable()
+                .addFilter(basicAuthFilter())
+                .authorizeRequests()
                 .antMatchers("/").permitAll()
                 .antMatchers("/secure/**").authenticated()
                 .antMatchers("/admin/**").hasAnyRole("ADMIN")
