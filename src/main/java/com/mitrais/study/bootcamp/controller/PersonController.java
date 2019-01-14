@@ -4,6 +4,7 @@ import com.google.common.base.Throwables;
 import com.mitrais.study.bootcamp.config.rs.PersonAssembler;
 import com.mitrais.study.bootcamp.model.rs.Person;
 import com.mitrais.study.bootcamp.model.rs.UserInfo;
+import com.mitrais.study.bootcamp.service.FormAction;
 import com.mitrais.study.bootcamp.service.PersonService;
 import org.hibernate.exception.ConstraintViolationException;
 import org.hibernate.exception.LockAcquisitionException;
@@ -17,11 +18,13 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.web.authentication.WebAuthenticationDetails;
 import org.springframework.stereotype.Controller;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 
 import javax.inject.Inject;
 import javax.servlet.http.HttpServletRequest;
@@ -31,6 +34,7 @@ import java.util.List;
  * @author Rudi_W144
  */
 @Controller
+@Transactional
 public class PersonController {
 
     private static final Logger log = LoggerFactory.getLogger(PersonController.class);
@@ -45,7 +49,7 @@ public class PersonController {
     private AuthenticationManager authMgr;
 
     @GetMapping(value = "/signup")
-    public String showSignUpForm(@ModelAttribute(value = "person") Person upPerson) {
+    public String showSignUpPage(@ModelAttribute(value = "person") Person upPerson) {
         return "sign-up";
     }
 
@@ -77,7 +81,7 @@ public class PersonController {
     }
 
     @GetMapping(value = "/signin")
-    public String showSignInForm(@ModelAttribute(value = "user") UserInfo upUser) {
+    public String showSignInPage(@ModelAttribute(value = "user") UserInfo upUser) {
         return "sign-in";
     }
 

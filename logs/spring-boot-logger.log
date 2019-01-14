@@ -19305,3 +19305,1312 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No q
 2019-01-14 14:36:11,578 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-6] binding parameter [1] as [BIGINT] - [11]
 2019-01-14 14:36:11,579 DEBUG com.mitrais.study.bootcamp.data.jpa.JpaRepositoryBase [http-nio-8080-exec-6] FindAll Person returned 14 of 14 rows (paged by Page request [number: 0, size 20, sort: UNSORTED])
 2019-01-14 14:36:11,816 WARN org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-7] No mapping for GET /favicon.ico
+2019-01-14 14:48:13,915 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-57] Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-01-14 14:48:13,916 INFO com.zaxxer.hikari.HikariDataSource [Thread-57] HikariPool-9 - Shutdown initiated...
+2019-01-14 14:48:13,920 INFO com.zaxxer.hikari.HikariDataSource [Thread-57] HikariPool-9 - Shutdown completed.
+2019-01-14 14:48:14,332 INFO com.mitrais.study.bootcamp.BootcampApplication [restartedMain] Starting application...
+2019-01-14 14:48:14,401 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting BootcampApplication on MTPC8045 with PID 8612 (D:\git\bootcamp\target\classes started by Rudi_W144 in D:\git\bootcamp)
+2019-01-14 14:48:14,401 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2019-01-14 14:48:14,401 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2019-01-14 14:48:14,560 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-01-14 14:48:14,578 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 18ms. Found 2 repository interfaces.
+2019-01-14 14:48:14,621 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f8200424] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-14 14:48:14,621 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$77a05156] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-14 14:48:14,690 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2019-01-14 14:48:14,691 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2019-01-14 14:48:14,691 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2019-01-14 14:48:14,692 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet Engine: Apache Tomcat/9.0.13
+2019-01-14 14:48:14,705 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2019-01-14 14:48:14,706 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 304 ms
+2019-01-14 14:48:14,743 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-10 - Starting...
+2019-01-14 14:48:14,764 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-10 - Start completed.
+2019-01-14 14:48:14,892 INFO liquibase.logging.core.Slf4jLogger [restartedMain] SELECT COUNT(*) FROM public.databasechangeloglock
+2019-01-14 14:48:14,893 INFO liquibase.logging.core.Slf4jLogger [restartedMain] SELECT COUNT(*) FROM public.databasechangeloglock
+2019-01-14 14:48:14,894 INFO liquibase.logging.core.Slf4jLogger [restartedMain] SELECT LOCKED FROM public.databasechangeloglock WHERE ID=1
+2019-01-14 14:48:14,895 INFO liquibase.logging.core.Slf4jLogger [restartedMain] Successfully acquired change log lock
+2019-01-14 14:48:14,917 INFO liquibase.logging.core.Slf4jLogger [restartedMain] SELECT MD5SUM FROM public.databasechangelog WHERE MD5SUM IS NOT NULL LIMIT 1
+2019-01-14 14:48:14,918 INFO liquibase.logging.core.Slf4jLogger [restartedMain] SELECT COUNT(*) FROM public.databasechangelog
+2019-01-14 14:48:14,919 INFO liquibase.logging.core.Slf4jLogger [restartedMain] Reading from public.databasechangelog
+2019-01-14 14:48:14,919 INFO liquibase.logging.core.Slf4jLogger [restartedMain] SELECT * FROM public.databasechangelog ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+2019-01-14 14:48:14,922 INFO liquibase.logging.core.Slf4jLogger [restartedMain] Successfully released change log lock
+2019-01-14 14:48:14,941 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-01-14 14:48:14,951 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL82Dialect
+2019-01-14 14:48:15,013 INFO org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl [restartedMain] HHH000421: Disabling contextual LOB creation as hibernate.jdbc.lob.non_contextual_creation is true
+2019-01-14 14:48:15,013 INFO org.hibernate.type.BasicTypeRegistry [restartedMain] HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@efad3a
+2019-01-14 14:48:15,045 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-01-14 14:48:15,163 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-01-14 14:48:15,193 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4f82ee6e, org.springframework.security.web.context.SecurityContextPersistenceFilter@1625af3, org.springframework.security.web.context.SecurityContextPersistenceFilter@1d57ffaf, org.springframework.security.web.header.HeaderWriterFilter@6989c9d5, org.springframework.security.web.authentication.logout.LogoutFilter@2f7c3f80, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@64028487, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@78f53eac, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5f958706, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@79bd73e1, org.springframework.security.web.session.SessionManagementFilter@acf5ade, org.springframework.security.web.access.ExceptionTranslationFilter@126ee52c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3ac5e221]
+2019-01-14 14:48:15,215 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2019-01-14 14:48:15,227 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2019-01-14 14:48:15,228 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Using a shared selector for servlet write/read
+2019-01-14 14:48:15,230 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2019-01-14 14:48:15,231 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started BootcampApplication in 0.896 seconds (JVM running for 1393.343)
+2019-01-14 14:48:15,232 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2019-01-14 14:48:15,233 INFO com.mitrais.study.bootcamp.BootcampApplication [restartedMain] Application is ready...
+2019-01-14 14:49:39,167 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-64] Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-01-14 14:49:39,169 INFO com.zaxxer.hikari.HikariDataSource [Thread-64] HikariPool-10 - Shutdown initiated...
+2019-01-14 14:49:39,175 INFO com.zaxxer.hikari.HikariDataSource [Thread-64] HikariPool-10 - Shutdown completed.
+2019-01-14 14:49:39,556 INFO com.mitrais.study.bootcamp.BootcampApplication [restartedMain] Starting application...
+2019-01-14 14:49:39,621 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting BootcampApplication on MTPC8045 with PID 8612 (D:\git\bootcamp\target\classes started by Rudi_W144 in D:\git\bootcamp)
+2019-01-14 14:49:39,621 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2019-01-14 14:49:39,621 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2019-01-14 14:49:39,778 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-01-14 14:49:39,795 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 16ms. Found 2 repository interfaces.
+2019-01-14 14:49:39,845 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f8200424] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-14 14:49:39,847 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$77a05156] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-14 14:49:39,915 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2019-01-14 14:49:39,915 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2019-01-14 14:49:39,915 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2019-01-14 14:49:39,916 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet Engine: Apache Tomcat/9.0.13
+2019-01-14 14:49:39,928 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2019-01-14 14:49:39,928 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 306 ms
+2019-01-14 14:49:39,961 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-11 - Starting...
+2019-01-14 14:49:39,980 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-11 - Start completed.
+2019-01-14 14:49:40,084 INFO liquibase.logging.core.Slf4jLogger [restartedMain] SELECT COUNT(*) FROM public.databasechangeloglock
+2019-01-14 14:49:40,085 INFO liquibase.logging.core.Slf4jLogger [restartedMain] SELECT COUNT(*) FROM public.databasechangeloglock
+2019-01-14 14:49:40,086 INFO liquibase.logging.core.Slf4jLogger [restartedMain] SELECT LOCKED FROM public.databasechangeloglock WHERE ID=1
+2019-01-14 14:49:40,088 INFO liquibase.logging.core.Slf4jLogger [restartedMain] Successfully acquired change log lock
+2019-01-14 14:49:40,109 INFO liquibase.logging.core.Slf4jLogger [restartedMain] SELECT MD5SUM FROM public.databasechangelog WHERE MD5SUM IS NOT NULL LIMIT 1
+2019-01-14 14:49:40,110 INFO liquibase.logging.core.Slf4jLogger [restartedMain] SELECT COUNT(*) FROM public.databasechangelog
+2019-01-14 14:49:40,111 INFO liquibase.logging.core.Slf4jLogger [restartedMain] Reading from public.databasechangelog
+2019-01-14 14:49:40,111 INFO liquibase.logging.core.Slf4jLogger [restartedMain] SELECT * FROM public.databasechangelog ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+2019-01-14 14:49:40,114 INFO liquibase.logging.core.Slf4jLogger [restartedMain] Successfully released change log lock
+2019-01-14 14:49:40,132 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-01-14 14:49:40,140 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL82Dialect
+2019-01-14 14:49:40,210 INFO org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl [restartedMain] HHH000421: Disabling contextual LOB creation as hibernate.jdbc.lob.non_contextual_creation is true
+2019-01-14 14:49:40,211 INFO org.hibernate.type.BasicTypeRegistry [restartedMain] HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@efad3a
+2019-01-14 14:49:40,244 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-01-14 14:49:40,358 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-01-14 14:49:40,383 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6846915f, org.springframework.security.web.context.SecurityContextPersistenceFilter@13fb2cd2, org.springframework.security.web.context.SecurityContextPersistenceFilter@7c9bbb30, org.springframework.security.web.header.HeaderWriterFilter@610c01d4, org.springframework.security.web.authentication.logout.LogoutFilter@73dda36c, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@da1cc9b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@57e29146, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@566128cf, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1d886556, org.springframework.security.web.session.SessionManagementFilter@709aa077, org.springframework.security.web.access.ExceptionTranslationFilter@58ee7782, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4d1e8f17]
+2019-01-14 14:49:40,402 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2019-01-14 14:49:40,411 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2019-01-14 14:49:40,412 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Using a shared selector for servlet write/read
+2019-01-14 14:49:40,415 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2019-01-14 14:49:40,416 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started BootcampApplication in 0.857 seconds (JVM running for 1478.527)
+2019-01-14 14:49:40,417 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2019-01-14 14:49:40,417 INFO com.mitrais.study.bootcamp.BootcampApplication [restartedMain] Application is ready...
+2019-01-14 14:52:31,384 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-71] Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-01-14 14:52:31,386 INFO com.zaxxer.hikari.HikariDataSource [Thread-71] HikariPool-11 - Shutdown initiated...
+2019-01-14 14:52:31,390 INFO com.zaxxer.hikari.HikariDataSource [Thread-71] HikariPool-11 - Shutdown completed.
+2019-01-14 14:52:31,800 INFO com.mitrais.study.bootcamp.BootcampApplication [restartedMain] Starting application...
+2019-01-14 14:52:31,875 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting BootcampApplication on MTPC8045 with PID 8612 (D:\git\bootcamp\target\classes started by Rudi_W144 in D:\git\bootcamp)
+2019-01-14 14:52:31,876 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2019-01-14 14:52:31,876 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2019-01-14 14:52:32,052 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-01-14 14:52:32,069 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 17ms. Found 2 repository interfaces.
+2019-01-14 14:52:32,119 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f8200424] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-14 14:52:32,120 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$77a05156] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-14 14:52:32,205 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2019-01-14 14:52:32,205 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2019-01-14 14:52:32,205 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2019-01-14 14:52:32,206 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet Engine: Apache Tomcat/9.0.13
+2019-01-14 14:52:32,219 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2019-01-14 14:52:32,219 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 342 ms
+2019-01-14 14:52:32,257 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-12 - Starting...
+2019-01-14 14:52:32,277 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-12 - Start completed.
+2019-01-14 14:52:32,388 INFO liquibase.logging.core.Slf4jLogger [restartedMain] SELECT COUNT(*) FROM public.databasechangeloglock
+2019-01-14 14:52:32,390 INFO liquibase.logging.core.Slf4jLogger [restartedMain] SELECT COUNT(*) FROM public.databasechangeloglock
+2019-01-14 14:52:32,390 INFO liquibase.logging.core.Slf4jLogger [restartedMain] SELECT LOCKED FROM public.databasechangeloglock WHERE ID=1
+2019-01-14 14:52:32,395 INFO liquibase.logging.core.Slf4jLogger [restartedMain] Successfully acquired change log lock
+2019-01-14 14:52:32,419 INFO liquibase.logging.core.Slf4jLogger [restartedMain] SELECT MD5SUM FROM public.databasechangelog WHERE MD5SUM IS NOT NULL LIMIT 1
+2019-01-14 14:52:32,420 INFO liquibase.logging.core.Slf4jLogger [restartedMain] SELECT COUNT(*) FROM public.databasechangelog
+2019-01-14 14:52:32,421 INFO liquibase.logging.core.Slf4jLogger [restartedMain] Reading from public.databasechangelog
+2019-01-14 14:52:32,421 INFO liquibase.logging.core.Slf4jLogger [restartedMain] SELECT * FROM public.databasechangelog ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+2019-01-14 14:52:32,425 INFO liquibase.logging.core.Slf4jLogger [restartedMain] Successfully released change log lock
+2019-01-14 14:52:32,449 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-01-14 14:52:32,464 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL82Dialect
+2019-01-14 14:52:32,533 INFO org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl [restartedMain] HHH000421: Disabling contextual LOB creation as hibernate.jdbc.lob.non_contextual_creation is true
+2019-01-14 14:52:32,534 INFO org.hibernate.type.BasicTypeRegistry [restartedMain] HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@efad3a
+2019-01-14 14:52:32,566 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-01-14 14:52:32,708 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-01-14 14:52:32,749 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@58f11916, org.springframework.security.web.context.SecurityContextPersistenceFilter@72bee7cd, org.springframework.security.web.context.SecurityContextPersistenceFilter@d0822c0, org.springframework.security.web.header.HeaderWriterFilter@5482cd77, org.springframework.security.web.authentication.logout.LogoutFilter@19782173, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5939c774, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@73419fa7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@31ea0dcd, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@ce65ce8, org.springframework.security.web.session.SessionManagementFilter@5c7e8893, org.springframework.security.web.access.ExceptionTranslationFilter@3129f3dd, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@748ecfe2]
+2019-01-14 14:52:32,772 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2019-01-14 14:52:32,781 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2019-01-14 14:52:32,782 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Using a shared selector for servlet write/read
+2019-01-14 14:52:32,784 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2019-01-14 14:52:32,785 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started BootcampApplication in 0.983 seconds (JVM running for 1650.896)
+2019-01-14 14:52:32,786 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2019-01-14 14:52:32,786 INFO com.mitrais.study.bootcamp.BootcampApplication [restartedMain] Application is ready...
+2019-01-14 14:54:23,257 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-01-14 14:54:23,257 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2019-01-14 14:54:23,261 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 4 ms
+2019-01-14 14:54:23,270 INFO org.hibernate.hql.internal.QueryTranslatorFactoryInitiator [http-nio-8080-exec-1] HHH000397: Using ASTQueryTranslatorFactory
+2019-01-14 14:54:23,272 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-1] 
+    select
+        distinct count(distinct person0_.id) as col_0_0_ 
+    from
+        person person0_
+2019-01-14 14:54:23,275 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-1] 
+    select
+        distinct person0_.id as id1_0_,
+        person0_.name as name2_0_,
+        person0_.password as password3_0_,
+        person0_.username as username4_0_,
+        person0_.version as version5_0_ 
+    from
+        person person0_ limit ?
+2019-01-14 14:54:23,277 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-1] 
+    select
+        roleids0_.person_id as person_i1_1_0_,
+        roleids0_.role_ids as role_ids2_1_0_ 
+    from
+        person_role_ids roleids0_ 
+    where
+        roleids0_.person_id=?
+2019-01-14 14:54:23,278 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-1] binding parameter [1] as [BIGINT] - [13]
+2019-01-14 14:54:23,279 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-1] 
+    select
+        roleids0_.person_id as person_i1_1_0_,
+        roleids0_.role_ids as role_ids2_1_0_ 
+    from
+        person_role_ids roleids0_ 
+    where
+        roleids0_.person_id=?
+2019-01-14 14:54:23,280 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-1] binding parameter [1] as [BIGINT] - [5]
+2019-01-14 14:54:23,280 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-1] 
+    select
+        roleids0_.person_id as person_i1_1_0_,
+        roleids0_.role_ids as role_ids2_1_0_ 
+    from
+        person_role_ids roleids0_ 
+    where
+        roleids0_.person_id=?
+2019-01-14 14:54:23,281 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-1] binding parameter [1] as [BIGINT] - [6]
+2019-01-14 14:54:23,282 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-1] 
+    select
+        roleids0_.person_id as person_i1_1_0_,
+        roleids0_.role_ids as role_ids2_1_0_ 
+    from
+        person_role_ids roleids0_ 
+    where
+        roleids0_.person_id=?
+2019-01-14 14:54:23,283 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-1] binding parameter [1] as [BIGINT] - [16]
+2019-01-14 14:54:23,284 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-1] 
+    select
+        roleids0_.person_id as person_i1_1_0_,
+        roleids0_.role_ids as role_ids2_1_0_ 
+    from
+        person_role_ids roleids0_ 
+    where
+        roleids0_.person_id=?
+2019-01-14 14:54:23,284 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-1] binding parameter [1] as [BIGINT] - [12]
+2019-01-14 14:54:23,285 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-1] 
+    select
+        roleids0_.person_id as person_i1_1_0_,
+        roleids0_.role_ids as role_ids2_1_0_ 
+    from
+        person_role_ids roleids0_ 
+    where
+        roleids0_.person_id=?
+2019-01-14 14:54:23,286 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-1] binding parameter [1] as [BIGINT] - [8]
+2019-01-14 14:54:23,286 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-1] 
+    select
+        roleids0_.person_id as person_i1_1_0_,
+        roleids0_.role_ids as role_ids2_1_0_ 
+    from
+        person_role_ids roleids0_ 
+    where
+        roleids0_.person_id=?
+2019-01-14 14:54:23,287 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-1] binding parameter [1] as [BIGINT] - [10]
+2019-01-14 14:54:23,287 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-1] 
+    select
+        roleids0_.person_id as person_i1_1_0_,
+        roleids0_.role_ids as role_ids2_1_0_ 
+    from
+        person_role_ids roleids0_ 
+    where
+        roleids0_.person_id=?
+2019-01-14 14:54:23,288 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-1] binding parameter [1] as [BIGINT] - [7]
+2019-01-14 14:54:23,288 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-1] 
+    select
+        roleids0_.person_id as person_i1_1_0_,
+        roleids0_.role_ids as role_ids2_1_0_ 
+    from
+        person_role_ids roleids0_ 
+    where
+        roleids0_.person_id=?
+2019-01-14 14:54:23,289 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-1] binding parameter [1] as [BIGINT] - [9]
+2019-01-14 14:54:23,289 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-1] 
+    select
+        roleids0_.person_id as person_i1_1_0_,
+        roleids0_.role_ids as role_ids2_1_0_ 
+    from
+        person_role_ids roleids0_ 
+    where
+        roleids0_.person_id=?
+2019-01-14 14:54:23,290 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-1] binding parameter [1] as [BIGINT] - [17]
+2019-01-14 14:54:23,291 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-1] 
+    select
+        roleids0_.person_id as person_i1_1_0_,
+        roleids0_.role_ids as role_ids2_1_0_ 
+    from
+        person_role_ids roleids0_ 
+    where
+        roleids0_.person_id=?
+2019-01-14 14:54:23,291 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-1] binding parameter [1] as [BIGINT] - [1]
+2019-01-14 14:54:23,292 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-1] 
+    select
+        roleids0_.person_id as person_i1_1_0_,
+        roleids0_.role_ids as role_ids2_1_0_ 
+    from
+        person_role_ids roleids0_ 
+    where
+        roleids0_.person_id=?
+2019-01-14 14:54:23,292 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-1] binding parameter [1] as [BIGINT] - [14]
+2019-01-14 14:54:23,293 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-1] 
+    select
+        roleids0_.person_id as person_i1_1_0_,
+        roleids0_.role_ids as role_ids2_1_0_ 
+    from
+        person_role_ids roleids0_ 
+    where
+        roleids0_.person_id=?
+2019-01-14 14:54:23,293 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-1] binding parameter [1] as [BIGINT] - [15]
+2019-01-14 14:54:23,294 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-1] 
+    select
+        roleids0_.person_id as person_i1_1_0_,
+        roleids0_.role_ids as role_ids2_1_0_ 
+    from
+        person_role_ids roleids0_ 
+    where
+        roleids0_.person_id=?
+2019-01-14 14:54:23,294 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-1] binding parameter [1] as [BIGINT] - [11]
+2019-01-14 14:54:23,295 DEBUG com.mitrais.study.bootcamp.data.jpa.JpaRepositoryBase [http-nio-8080-exec-1] FindAll Person returned 14 of 14 rows (paged by Page request [number: 0, size 20, sort: UNSORTED])
+2019-01-14 14:54:23,307 ERROR org.thymeleaf.TemplateEngine [http-nio-8080-exec-1] [THYMELEAF][http-nio-8080-exec-1] Exception processing template "people": An error happened during template parsing (template: "class path resource [templates/people.html]")
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/people.html]")
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1370)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1116)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1055)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:158)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:82)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:791)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.attoparser.ParseException: Could not parse as expression: "@{/secure/people/modify} + ${person.username} }" (template: "people" - line 30, col 50)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	... 78 common frames omitted
+Caused by: org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as expression: "@{/secure/people/modify} + ${person.username} }" (template: "people" - line 30, col 50)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:131)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:62)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:44)
+	at org.thymeleaf.engine.EngineEventUtils.parseAttributeExpression(EngineEventUtils.java:220)
+	at org.thymeleaf.engine.EngineEventUtils.computeAttributeExpression(EngineEventUtils.java:207)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:125)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.Model.process(Model.java:290)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.processIterationModel(IteratedGatheringModelProcessable.java:367)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.process(IteratedGatheringModelProcessable.java:221)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleCloseElement(ProcessorTemplateHandler.java:1640)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleCloseElementEnd(TemplateHandlerAdapterMarkupHandler.java:388)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:322)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleCloseElementEnd(OutputExpressionInlinePreProcessorHandler.java:220)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:164)
+	at org.attoparser.HtmlElement.handleCloseElementEnd(HtmlElement.java:169)
+	at org.attoparser.HtmlMarkupHandler.handleCloseElementEnd(HtmlMarkupHandler.java:412)
+	at org.attoparser.MarkupEventProcessorHandler.handleCloseElementEnd(MarkupEventProcessorHandler.java:473)
+	at org.attoparser.ParsingElementMarkupUtil.parseCloseElement(ParsingElementMarkupUtil.java:201)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:725)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	... 80 common frames omitted
+2019-01-14 14:54:23,309 ERROR org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/people.html]")] with root cause
+org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as expression: "@{/secure/people/modify} + ${person.username} }" (template: "people" - line 30, col 50)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:131)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:62)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:44)
+	at org.thymeleaf.engine.EngineEventUtils.parseAttributeExpression(EngineEventUtils.java:220)
+	at org.thymeleaf.engine.EngineEventUtils.computeAttributeExpression(EngineEventUtils.java:207)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:125)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.Model.process(Model.java:290)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.processIterationModel(IteratedGatheringModelProcessable.java:367)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.process(IteratedGatheringModelProcessable.java:221)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleCloseElement(ProcessorTemplateHandler.java:1640)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleCloseElementEnd(TemplateHandlerAdapterMarkupHandler.java:388)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:322)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleCloseElementEnd(OutputExpressionInlinePreProcessorHandler.java:220)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:164)
+	at org.attoparser.HtmlElement.handleCloseElementEnd(HtmlElement.java:169)
+	at org.attoparser.HtmlMarkupHandler.handleCloseElementEnd(HtmlMarkupHandler.java:412)
+	at org.attoparser.MarkupEventProcessorHandler.handleCloseElementEnd(MarkupEventProcessorHandler.java:473)
+	at org.attoparser.ParsingElementMarkupUtil.parseCloseElement(ParsingElementMarkupUtil.java:201)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:725)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1370)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1116)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1055)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:158)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:82)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:791)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2019-01-14 14:54:23,503 WARN org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] No mapping for GET /favicon.ico
+2019-01-14 14:54:23,664 WARN org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-4] No mapping for GET /favicon.ico
+2019-01-14 14:55:54,511 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-78] Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-01-14 14:55:54,512 INFO com.zaxxer.hikari.HikariDataSource [Thread-78] HikariPool-12 - Shutdown initiated...
+2019-01-14 14:55:54,515 INFO com.zaxxer.hikari.HikariDataSource [Thread-78] HikariPool-12 - Shutdown completed.
+2019-01-14 14:55:54,951 INFO com.mitrais.study.bootcamp.BootcampApplication [restartedMain] Starting application...
+2019-01-14 14:55:55,030 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting BootcampApplication on MTPC8045 with PID 8612 (D:\git\bootcamp\target\classes started by Rudi_W144 in D:\git\bootcamp)
+2019-01-14 14:55:55,030 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2019-01-14 14:55:55,030 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2019-01-14 14:55:55,188 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-01-14 14:55:55,208 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 20ms. Found 2 repository interfaces.
+2019-01-14 14:55:55,249 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f8200424] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-14 14:55:55,250 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$77a05156] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-14 14:55:55,314 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2019-01-14 14:55:55,315 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2019-01-14 14:55:55,315 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2019-01-14 14:55:55,315 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet Engine: Apache Tomcat/9.0.13
+2019-01-14 14:55:55,326 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2019-01-14 14:55:55,327 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 296 ms
+2019-01-14 14:55:55,360 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-13 - Starting...
+2019-01-14 14:55:55,379 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-13 - Start completed.
+2019-01-14 14:55:55,486 INFO liquibase.logging.core.Slf4jLogger [restartedMain] SELECT COUNT(*) FROM public.databasechangeloglock
+2019-01-14 14:55:55,487 INFO liquibase.logging.core.Slf4jLogger [restartedMain] SELECT COUNT(*) FROM public.databasechangeloglock
+2019-01-14 14:55:55,487 INFO liquibase.logging.core.Slf4jLogger [restartedMain] SELECT LOCKED FROM public.databasechangeloglock WHERE ID=1
+2019-01-14 14:55:55,489 INFO liquibase.logging.core.Slf4jLogger [restartedMain] Successfully acquired change log lock
+2019-01-14 14:55:55,513 INFO liquibase.logging.core.Slf4jLogger [restartedMain] SELECT MD5SUM FROM public.databasechangelog WHERE MD5SUM IS NOT NULL LIMIT 1
+2019-01-14 14:55:55,514 INFO liquibase.logging.core.Slf4jLogger [restartedMain] SELECT COUNT(*) FROM public.databasechangelog
+2019-01-14 14:55:55,515 INFO liquibase.logging.core.Slf4jLogger [restartedMain] Reading from public.databasechangelog
+2019-01-14 14:55:55,516 INFO liquibase.logging.core.Slf4jLogger [restartedMain] SELECT * FROM public.databasechangelog ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+2019-01-14 14:55:55,519 INFO liquibase.logging.core.Slf4jLogger [restartedMain] Successfully released change log lock
+2019-01-14 14:55:55,540 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-01-14 14:55:55,549 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL82Dialect
+2019-01-14 14:55:55,619 INFO org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl [restartedMain] HHH000421: Disabling contextual LOB creation as hibernate.jdbc.lob.non_contextual_creation is true
+2019-01-14 14:55:55,619 INFO org.hibernate.type.BasicTypeRegistry [restartedMain] HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@efad3a
+2019-01-14 14:55:55,651 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-01-14 14:55:55,766 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-01-14 14:55:55,794 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@53efb1e9, org.springframework.security.web.context.SecurityContextPersistenceFilter@6e399afc, org.springframework.security.web.context.SecurityContextPersistenceFilter@707d74d, org.springframework.security.web.header.HeaderWriterFilter@35680aac, org.springframework.security.web.authentication.logout.LogoutFilter@5e4c33e4, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5dabb795, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5fec55b4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2aa4198f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@37bc0038, org.springframework.security.web.session.SessionManagementFilter@7680439c, org.springframework.security.web.access.ExceptionTranslationFilter@2fbef1a8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@375b9f35]
+2019-01-14 14:55:55,815 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2019-01-14 14:55:55,824 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2019-01-14 14:55:55,825 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Using a shared selector for servlet write/read
+2019-01-14 14:55:55,828 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2019-01-14 14:55:55,828 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started BootcampApplication in 0.874 seconds (JVM running for 1853.94)
+2019-01-14 14:55:55,830 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2019-01-14 14:55:55,830 INFO com.mitrais.study.bootcamp.BootcampApplication [restartedMain] Application is ready...
+2019-01-14 15:45:43,829 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-85] Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-01-14 15:45:43,830 INFO com.zaxxer.hikari.HikariDataSource [Thread-85] HikariPool-13 - Shutdown initiated...
+2019-01-14 15:45:43,835 INFO com.zaxxer.hikari.HikariDataSource [Thread-85] HikariPool-13 - Shutdown completed.
+2019-01-14 15:45:44,248 INFO com.mitrais.study.bootcamp.BootcampApplication [restartedMain] Starting application...
+2019-01-14 15:45:44,316 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting BootcampApplication on MTPC8045 with PID 8612 (D:\git\bootcamp\target\classes started by Rudi_W144 in D:\git\bootcamp)
+2019-01-14 15:45:44,316 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2019-01-14 15:45:44,316 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2019-01-14 15:45:44,482 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-01-14 15:45:44,501 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 19ms. Found 2 repository interfaces.
+2019-01-14 15:45:44,548 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f8200424] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-14 15:45:44,549 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$77a05156] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-14 15:45:44,626 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2019-01-14 15:45:44,627 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2019-01-14 15:45:44,627 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2019-01-14 15:45:44,627 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet Engine: Apache Tomcat/9.0.13
+2019-01-14 15:45:44,642 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2019-01-14 15:45:44,642 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 325 ms
+2019-01-14 15:45:44,689 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-14 - Starting...
+2019-01-14 15:45:44,722 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-14 - Start completed.
+2019-01-14 15:45:44,841 INFO liquibase.logging.core.Slf4jLogger [restartedMain] SELECT COUNT(*) FROM public.databasechangeloglock
+2019-01-14 15:45:44,842 INFO liquibase.logging.core.Slf4jLogger [restartedMain] SELECT COUNT(*) FROM public.databasechangeloglock
+2019-01-14 15:45:44,843 INFO liquibase.logging.core.Slf4jLogger [restartedMain] SELECT LOCKED FROM public.databasechangeloglock WHERE ID=1
+2019-01-14 15:45:44,846 INFO liquibase.logging.core.Slf4jLogger [restartedMain] Successfully acquired change log lock
+2019-01-14 15:45:44,876 INFO liquibase.logging.core.Slf4jLogger [restartedMain] SELECT MD5SUM FROM public.databasechangelog WHERE MD5SUM IS NOT NULL LIMIT 1
+2019-01-14 15:45:44,877 INFO liquibase.logging.core.Slf4jLogger [restartedMain] SELECT COUNT(*) FROM public.databasechangelog
+2019-01-14 15:45:44,878 INFO liquibase.logging.core.Slf4jLogger [restartedMain] Reading from public.databasechangelog
+2019-01-14 15:45:44,878 INFO liquibase.logging.core.Slf4jLogger [restartedMain] SELECT * FROM public.databasechangelog ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+2019-01-14 15:45:44,884 INFO liquibase.logging.core.Slf4jLogger [restartedMain] Successfully released change log lock
+2019-01-14 15:45:44,904 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-01-14 15:45:44,914 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL82Dialect
+2019-01-14 15:45:44,980 INFO org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl [restartedMain] HHH000421: Disabling contextual LOB creation as hibernate.jdbc.lob.non_contextual_creation is true
+2019-01-14 15:45:44,980 INFO org.hibernate.type.BasicTypeRegistry [restartedMain] HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@efad3a
+2019-01-14 15:45:45,008 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-01-14 15:45:45,122 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-01-14 15:45:45,149 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2b630475, org.springframework.security.web.context.SecurityContextPersistenceFilter@271dfb4d, org.springframework.security.web.context.SecurityContextPersistenceFilter@732ea0ac, org.springframework.security.web.header.HeaderWriterFilter@4a8f60ec, org.springframework.security.web.authentication.logout.LogoutFilter@206e90bd, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@511ea2b4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4fdee623, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7ee77734, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@17c28354, org.springframework.security.web.session.SessionManagementFilter@3dac6f6a, org.springframework.security.web.access.ExceptionTranslationFilter@67eb74ee, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@fcfbd54]
+2019-01-14 15:45:45,169 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2019-01-14 15:45:45,178 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2019-01-14 15:45:45,179 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Using a shared selector for servlet write/read
+2019-01-14 15:45:45,181 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2019-01-14 15:45:45,182 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started BootcampApplication in 0.932 seconds (JVM running for 4843.338)
+2019-01-14 15:45:45,183 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-01-14 15:45:45,184 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2019-01-14 15:45:45,186 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2019-01-14 15:45:45,186 INFO com.mitrais.study.bootcamp.BootcampApplication [restartedMain] Application is ready...
+2019-01-14 15:45:45,188 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Completed initialization in 4 ms
+2019-01-14 15:45:45,338 WARN org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] No mapping for GET /favicon.ico
+2019-01-14 15:45:45,493 WARN org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-3] No mapping for GET /favicon.ico
+2019-01-14 15:45:50,337 WARN org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-10] No mapping for GET /favicon.ico
+2019-01-14 15:45:52,185 WARN org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-8] No mapping for GET /favicon.ico
+2019-01-14 15:45:57,808 INFO org.hibernate.hql.internal.QueryTranslatorFactoryInitiator [http-nio-8080-exec-2] HHH000397: Using ASTQueryTranslatorFactory
+2019-01-14 15:45:57,810 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-2] 
+    select
+        person0_.id as id1_0_,
+        person0_.name as name2_0_,
+        person0_.password as password3_0_,
+        person0_.username as username4_0_,
+        person0_.version as version5_0_ 
+    from
+        person person0_ 
+    where
+        person0_.username=?
+2019-01-14 15:45:57,811 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-2] binding parameter [1] as [VARCHAR] - [rudiwijaya]
+2019-01-14 15:45:57,812 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-2] 
+    select
+        roleids0_.person_id as person_i1_1_0_,
+        roleids0_.role_ids as role_ids2_1_0_ 
+    from
+        person_role_ids roleids0_ 
+    where
+        roleids0_.person_id=?
+2019-01-14 15:45:57,813 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-2] binding parameter [1] as [BIGINT] - [1]
+2019-01-14 15:45:57,886 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-1] 
+    select
+        distinct person0_.username as col_0_0_ 
+    from
+        person person0_ 
+    where
+        person0_.id=1
+2019-01-14 15:45:58,121 WARN org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-3] No mapping for GET /favicon.ico
+2019-01-14 15:45:59,961 WARN org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-6] No mapping for GET /favicon.ico
+2019-01-14 15:46:01,359 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-10] 
+    select
+        distinct count(distinct person0_.id) as col_0_0_ 
+    from
+        person person0_
+2019-01-14 15:46:01,362 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-10] 
+    select
+        distinct person0_.id as id1_0_,
+        person0_.name as name2_0_,
+        person0_.password as password3_0_,
+        person0_.username as username4_0_,
+        person0_.version as version5_0_ 
+    from
+        person person0_ limit ?
+2019-01-14 15:46:01,364 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-10] 
+    select
+        roleids0_.person_id as person_i1_1_0_,
+        roleids0_.role_ids as role_ids2_1_0_ 
+    from
+        person_role_ids roleids0_ 
+    where
+        roleids0_.person_id=?
+2019-01-14 15:46:01,364 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-10] binding parameter [1] as [BIGINT] - [13]
+2019-01-14 15:46:01,365 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-10] 
+    select
+        roleids0_.person_id as person_i1_1_0_,
+        roleids0_.role_ids as role_ids2_1_0_ 
+    from
+        person_role_ids roleids0_ 
+    where
+        roleids0_.person_id=?
+2019-01-14 15:46:01,366 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-10] binding parameter [1] as [BIGINT] - [5]
+2019-01-14 15:46:01,367 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-10] 
+    select
+        roleids0_.person_id as person_i1_1_0_,
+        roleids0_.role_ids as role_ids2_1_0_ 
+    from
+        person_role_ids roleids0_ 
+    where
+        roleids0_.person_id=?
+2019-01-14 15:46:01,367 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-10] binding parameter [1] as [BIGINT] - [6]
+2019-01-14 15:46:01,369 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-10] 
+    select
+        roleids0_.person_id as person_i1_1_0_,
+        roleids0_.role_ids as role_ids2_1_0_ 
+    from
+        person_role_ids roleids0_ 
+    where
+        roleids0_.person_id=?
+2019-01-14 15:46:01,369 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-10] binding parameter [1] as [BIGINT] - [16]
+2019-01-14 15:46:01,370 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-10] 
+    select
+        roleids0_.person_id as person_i1_1_0_,
+        roleids0_.role_ids as role_ids2_1_0_ 
+    from
+        person_role_ids roleids0_ 
+    where
+        roleids0_.person_id=?
+2019-01-14 15:46:01,370 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-10] binding parameter [1] as [BIGINT] - [12]
+2019-01-14 15:46:01,371 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-10] 
+    select
+        roleids0_.person_id as person_i1_1_0_,
+        roleids0_.role_ids as role_ids2_1_0_ 
+    from
+        person_role_ids roleids0_ 
+    where
+        roleids0_.person_id=?
+2019-01-14 15:46:01,371 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-10] binding parameter [1] as [BIGINT] - [8]
+2019-01-14 15:46:01,372 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-10] 
+    select
+        roleids0_.person_id as person_i1_1_0_,
+        roleids0_.role_ids as role_ids2_1_0_ 
+    from
+        person_role_ids roleids0_ 
+    where
+        roleids0_.person_id=?
+2019-01-14 15:46:01,372 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-10] binding parameter [1] as [BIGINT] - [10]
+2019-01-14 15:46:01,373 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-10] 
+    select
+        roleids0_.person_id as person_i1_1_0_,
+        roleids0_.role_ids as role_ids2_1_0_ 
+    from
+        person_role_ids roleids0_ 
+    where
+        roleids0_.person_id=?
+2019-01-14 15:46:01,373 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-10] binding parameter [1] as [BIGINT] - [7]
+2019-01-14 15:46:01,374 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-10] 
+    select
+        roleids0_.person_id as person_i1_1_0_,
+        roleids0_.role_ids as role_ids2_1_0_ 
+    from
+        person_role_ids roleids0_ 
+    where
+        roleids0_.person_id=?
+2019-01-14 15:46:01,374 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-10] binding parameter [1] as [BIGINT] - [9]
+2019-01-14 15:46:01,375 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-10] 
+    select
+        roleids0_.person_id as person_i1_1_0_,
+        roleids0_.role_ids as role_ids2_1_0_ 
+    from
+        person_role_ids roleids0_ 
+    where
+        roleids0_.person_id=?
+2019-01-14 15:46:01,375 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-10] binding parameter [1] as [BIGINT] - [17]
+2019-01-14 15:46:01,376 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-10] 
+    select
+        roleids0_.person_id as person_i1_1_0_,
+        roleids0_.role_ids as role_ids2_1_0_ 
+    from
+        person_role_ids roleids0_ 
+    where
+        roleids0_.person_id=?
+2019-01-14 15:46:01,376 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-10] binding parameter [1] as [BIGINT] - [1]
+2019-01-14 15:46:01,377 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-10] 
+    select
+        roleids0_.person_id as person_i1_1_0_,
+        roleids0_.role_ids as role_ids2_1_0_ 
+    from
+        person_role_ids roleids0_ 
+    where
+        roleids0_.person_id=?
+2019-01-14 15:46:01,377 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-10] binding parameter [1] as [BIGINT] - [14]
+2019-01-14 15:46:01,378 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-10] 
+    select
+        roleids0_.person_id as person_i1_1_0_,
+        roleids0_.role_ids as role_ids2_1_0_ 
+    from
+        person_role_ids roleids0_ 
+    where
+        roleids0_.person_id=?
+2019-01-14 15:46:01,378 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-10] binding parameter [1] as [BIGINT] - [15]
+2019-01-14 15:46:01,379 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-10] 
+    select
+        roleids0_.person_id as person_i1_1_0_,
+        roleids0_.role_ids as role_ids2_1_0_ 
+    from
+        person_role_ids roleids0_ 
+    where
+        roleids0_.person_id=?
+2019-01-14 15:46:01,379 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-10] binding parameter [1] as [BIGINT] - [11]
+2019-01-14 15:46:01,380 DEBUG com.mitrais.study.bootcamp.data.jpa.JpaRepositoryBase [http-nio-8080-exec-10] FindAll Person returned 14 of 14 rows (paged by Page request [number: 0, size 20, sort: UNSORTED])
+2019-01-14 15:46:01,622 WARN org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-7] No mapping for GET /favicon.ico
+2019-01-14 15:46:05,507 WARN org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-8] No mapping for GET /secure/people/add
+2019-01-14 15:46:05,751 WARN org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-9] No mapping for GET /favicon.ico
+2019-01-14 15:47:31,913 WARN org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] No mapping for GET /secure/people/add
+2019-01-14 15:47:31,978 WARN org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-3] No mapping for GET /favicon.ico
+2019-01-14 15:47:32,253 WARN org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-4] No mapping for GET /favicon.ico
+2019-01-14 15:47:38,343 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-92] Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-01-14 15:47:38,344 INFO com.zaxxer.hikari.HikariDataSource [Thread-92] HikariPool-14 - Shutdown initiated...
+2019-01-14 15:47:38,347 INFO com.zaxxer.hikari.HikariDataSource [Thread-92] HikariPool-14 - Shutdown completed.
+2019-01-14 15:47:38,797 INFO com.mitrais.study.bootcamp.BootcampApplication [restartedMain] Starting application...
+2019-01-14 15:47:38,868 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting BootcampApplication on MTPC8045 with PID 8612 (D:\git\bootcamp\target\classes started by Rudi_W144 in D:\git\bootcamp)
+2019-01-14 15:47:38,868 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2019-01-14 15:47:38,868 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2019-01-14 15:47:39,008 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-01-14 15:47:39,027 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 19ms. Found 2 repository interfaces.
+2019-01-14 15:47:39,070 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f8200424] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-14 15:47:39,071 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$77a05156] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-14 15:47:39,137 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2019-01-14 15:47:39,137 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2019-01-14 15:47:39,138 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2019-01-14 15:47:39,138 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet Engine: Apache Tomcat/9.0.13
+2019-01-14 15:47:39,149 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2019-01-14 15:47:39,150 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 280 ms
+2019-01-14 15:47:39,182 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-15 - Starting...
+2019-01-14 15:47:39,207 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-15 - Start completed.
+2019-01-14 15:47:39,311 INFO liquibase.logging.core.Slf4jLogger [restartedMain] SELECT COUNT(*) FROM public.databasechangeloglock
+2019-01-14 15:47:39,313 INFO liquibase.logging.core.Slf4jLogger [restartedMain] SELECT COUNT(*) FROM public.databasechangeloglock
+2019-01-14 15:47:39,313 INFO liquibase.logging.core.Slf4jLogger [restartedMain] SELECT LOCKED FROM public.databasechangeloglock WHERE ID=1
+2019-01-14 15:47:39,318 INFO liquibase.logging.core.Slf4jLogger [restartedMain] Successfully acquired change log lock
+2019-01-14 15:47:39,339 INFO liquibase.logging.core.Slf4jLogger [restartedMain] SELECT MD5SUM FROM public.databasechangelog WHERE MD5SUM IS NOT NULL LIMIT 1
+2019-01-14 15:47:39,340 INFO liquibase.logging.core.Slf4jLogger [restartedMain] SELECT COUNT(*) FROM public.databasechangelog
+2019-01-14 15:47:39,341 INFO liquibase.logging.core.Slf4jLogger [restartedMain] Reading from public.databasechangelog
+2019-01-14 15:47:39,341 INFO liquibase.logging.core.Slf4jLogger [restartedMain] SELECT * FROM public.databasechangelog ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+2019-01-14 15:47:39,344 INFO liquibase.logging.core.Slf4jLogger [restartedMain] Successfully released change log lock
+2019-01-14 15:47:39,363 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-01-14 15:47:39,372 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL82Dialect
+2019-01-14 15:47:39,435 INFO org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl [restartedMain] HHH000421: Disabling contextual LOB creation as hibernate.jdbc.lob.non_contextual_creation is true
+2019-01-14 15:47:39,435 INFO org.hibernate.type.BasicTypeRegistry [restartedMain] HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@efad3a
+2019-01-14 15:47:39,463 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-01-14 15:47:39,595 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-01-14 15:47:39,622 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6e3b6ab5, org.springframework.security.web.context.SecurityContextPersistenceFilter@2970a286, org.springframework.security.web.context.SecurityContextPersistenceFilter@4d881434, org.springframework.security.web.header.HeaderWriterFilter@4aa90b27, org.springframework.security.web.authentication.logout.LogoutFilter@44aee2ae, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@6a17553e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7904786a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7bf6a45e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1c4a543d, org.springframework.security.web.session.SessionManagementFilter@e163e30, org.springframework.security.web.access.ExceptionTranslationFilter@3a51dd22, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5b9e72f5]
+2019-01-14 15:47:39,641 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2019-01-14 15:47:39,650 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2019-01-14 15:47:39,651 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Using a shared selector for servlet write/read
+2019-01-14 15:47:39,655 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2019-01-14 15:47:39,655 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started BootcampApplication in 0.853 seconds (JVM running for 4957.813)
+2019-01-14 15:47:39,657 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2019-01-14 15:47:39,657 INFO com.mitrais.study.bootcamp.BootcampApplication [restartedMain] Application is ready...
+2019-01-14 15:47:46,033 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-01-14 15:47:46,035 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2019-01-14 15:47:46,039 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 4 ms
+2019-01-14 15:47:46,041 WARN org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] No mapping for GET /secure/people/add
+2019-01-14 15:47:46,184 WARN org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] No mapping for GET /favicon.ico
+2019-01-14 15:47:46,338 WARN org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-3] No mapping for GET /favicon.ico
+2019-01-14 15:48:32,798 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-99] Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-01-14 15:48:32,799 INFO com.zaxxer.hikari.HikariDataSource [Thread-99] HikariPool-15 - Shutdown initiated...
+2019-01-14 15:48:32,803 INFO com.zaxxer.hikari.HikariDataSource [Thread-99] HikariPool-15 - Shutdown completed.
+2019-01-14 15:48:33,314 INFO com.mitrais.study.bootcamp.BootcampApplication [restartedMain] Starting application...
+2019-01-14 15:48:33,382 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting BootcampApplication on MTPC8045 with PID 8612 (D:\git\bootcamp\target\classes started by Rudi_W144 in D:\git\bootcamp)
+2019-01-14 15:48:33,382 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2019-01-14 15:48:33,383 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2019-01-14 15:48:33,529 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-01-14 15:48:33,548 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 18ms. Found 2 repository interfaces.
+2019-01-14 15:48:33,598 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f8200424] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-14 15:48:33,600 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$77a05156] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-14 15:48:33,670 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2019-01-14 15:48:33,671 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2019-01-14 15:48:33,672 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2019-01-14 15:48:33,672 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet Engine: Apache Tomcat/9.0.13
+2019-01-14 15:48:33,684 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2019-01-14 15:48:33,684 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 300 ms
+2019-01-14 15:48:33,719 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-16 - Starting...
+2019-01-14 15:48:33,738 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-16 - Start completed.
+2019-01-14 15:48:33,849 INFO liquibase.logging.core.Slf4jLogger [restartedMain] SELECT COUNT(*) FROM public.databasechangeloglock
+2019-01-14 15:48:33,850 INFO liquibase.logging.core.Slf4jLogger [restartedMain] SELECT COUNT(*) FROM public.databasechangeloglock
+2019-01-14 15:48:33,851 INFO liquibase.logging.core.Slf4jLogger [restartedMain] SELECT LOCKED FROM public.databasechangeloglock WHERE ID=1
+2019-01-14 15:48:33,855 INFO liquibase.logging.core.Slf4jLogger [restartedMain] Successfully acquired change log lock
+2019-01-14 15:48:33,877 INFO liquibase.logging.core.Slf4jLogger [restartedMain] SELECT MD5SUM FROM public.databasechangelog WHERE MD5SUM IS NOT NULL LIMIT 1
+2019-01-14 15:48:33,879 INFO liquibase.logging.core.Slf4jLogger [restartedMain] SELECT COUNT(*) FROM public.databasechangelog
+2019-01-14 15:48:33,879 INFO liquibase.logging.core.Slf4jLogger [restartedMain] Reading from public.databasechangelog
+2019-01-14 15:48:33,880 INFO liquibase.logging.core.Slf4jLogger [restartedMain] SELECT * FROM public.databasechangelog ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+2019-01-14 15:48:33,883 INFO liquibase.logging.core.Slf4jLogger [restartedMain] Successfully released change log lock
+2019-01-14 15:48:33,906 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-01-14 15:48:33,916 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL82Dialect
+2019-01-14 15:48:33,984 INFO org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl [restartedMain] HHH000421: Disabling contextual LOB creation as hibernate.jdbc.lob.non_contextual_creation is true
+2019-01-14 15:48:33,984 INFO org.hibernate.type.BasicTypeRegistry [restartedMain] HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@efad3a
+2019-01-14 15:48:34,014 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-01-14 15:48:34,126 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-01-14 15:48:34,157 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2e7da022, org.springframework.security.web.context.SecurityContextPersistenceFilter@346e1e13, org.springframework.security.web.context.SecurityContextPersistenceFilter@6f614be7, org.springframework.security.web.header.HeaderWriterFilter@66224b42, org.springframework.security.web.authentication.logout.LogoutFilter@72661a79, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1d79a6ce, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@50db3a57, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@24d71355, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3aabc032, org.springframework.security.web.session.SessionManagementFilter@7eb50a5c, org.springframework.security.web.access.ExceptionTranslationFilter@590cc135, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4ddf8d56]
+2019-01-14 15:48:34,179 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2019-01-14 15:48:34,190 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2019-01-14 15:48:34,191 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Using a shared selector for servlet write/read
+2019-01-14 15:48:34,193 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2019-01-14 15:48:34,194 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started BootcampApplication in 0.877 seconds (JVM running for 5012.351)
+2019-01-14 15:48:34,195 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2019-01-14 15:48:34,196 INFO com.mitrais.study.bootcamp.BootcampApplication [restartedMain] Application is ready...
+2019-01-14 15:50:22,865 INFO com.mitrais.study.bootcamp.BootcampApplication [main] Starting application...
+2019-01-14 15:50:23,076 INFO com.mitrais.study.bootcamp.BootcampApplication [restartedMain] Starting application...
+2019-01-14 15:50:23,616 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting BootcampApplication on MTPC8045 with PID 15268 (D:\git\bootcamp\target\classes started by Rudi_W144 in D:\git\bootcamp)
+2019-01-14 15:50:23,616 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2019-01-14 15:50:23,618 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2019-01-14 15:50:23,717 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-01-14 15:50:23,718 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-01-14 15:50:24,418 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-01-14 15:50:24,496 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 72ms. Found 2 repository interfaces.
+2019-01-14 15:50:24,897 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9618e607] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-14 15:50:24,918 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$15993339] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-14 15:50:25,518 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2019-01-14 15:50:25,530 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2019-01-14 15:50:25,538 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2019-01-14 15:50:25,539 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet Engine: Apache Tomcat/9.0.13
+2019-01-14 15:50:25,549 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_191\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Docker\Docker\Resources\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Java\jdk1.8.0_191\bin;C:\apache-maven-3.6.0-bin\apache-maven-3.6.0\bin;C:\PostgreSQL\pg11\bin;C:\Program Files\Git\cmd;C:\Users\Rudi_W144\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\Docker Toolbox;.]
+2019-01-14 15:50:25,669 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2019-01-14 15:50:25,669 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1947 ms
+2019-01-14 15:50:25,864 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2019-01-14 15:50:25,979 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2019-01-14 15:50:26,668 INFO liquibase.logging.core.Slf4jLogger [restartedMain] SELECT COUNT(*) FROM public.databasechangeloglock
+2019-01-14 15:50:26,670 INFO liquibase.logging.core.Slf4jLogger [restartedMain] SELECT COUNT(*) FROM public.databasechangeloglock
+2019-01-14 15:50:26,672 INFO liquibase.logging.core.Slf4jLogger [restartedMain] SELECT LOCKED FROM public.databasechangeloglock WHERE ID=1
+2019-01-14 15:50:26,688 INFO liquibase.logging.core.Slf4jLogger [restartedMain] Successfully acquired change log lock
+2019-01-14 15:50:27,161 INFO liquibase.logging.core.Slf4jLogger [restartedMain] SELECT MD5SUM FROM public.databasechangelog WHERE MD5SUM IS NOT NULL LIMIT 1
+2019-01-14 15:50:27,163 INFO liquibase.logging.core.Slf4jLogger [restartedMain] SELECT COUNT(*) FROM public.databasechangelog
+2019-01-14 15:50:27,163 INFO liquibase.logging.core.Slf4jLogger [restartedMain] Reading from public.databasechangelog
+2019-01-14 15:50:27,164 INFO liquibase.logging.core.Slf4jLogger [restartedMain] SELECT * FROM public.databasechangelog ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+2019-01-14 15:50:27,177 INFO liquibase.logging.core.Slf4jLogger [restartedMain] Successfully released change log lock
+2019-01-14 15:50:27,266 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-01-14 15:50:27,329 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate Core {5.3.7.Final}
+2019-01-14 15:50:27,331 INFO org.hibernate.cfg.Environment [restartedMain] HHH000206: hibernate.properties not found
+2019-01-14 15:50:27,455 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-01-14 15:50:27,592 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL82Dialect
+2019-01-14 15:50:27,704 INFO org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl [restartedMain] HHH000421: Disabling contextual LOB creation as hibernate.jdbc.lob.non_contextual_creation is true
+2019-01-14 15:50:27,709 INFO org.hibernate.type.BasicTypeRegistry [restartedMain] HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@509e599b
+2019-01-14 15:50:28,331 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-01-14 15:50:29,012 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-01-14 15:50:29,386 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3f0d2f4, org.springframework.security.web.context.SecurityContextPersistenceFilter@4ae4cb8, org.springframework.security.web.context.SecurityContextPersistenceFilter@7ebbd380, org.springframework.security.web.header.HeaderWriterFilter@15ceb00e, org.springframework.security.web.authentication.logout.LogoutFilter@2d0aa33, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@59ad6062, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@44b752c2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@a54452f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2817140d, org.springframework.security.web.session.SessionManagementFilter@5a1ac631, org.springframework.security.web.access.ExceptionTranslationFilter@6432a959, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@e33559b]
+2019-01-14 15:50:29,505 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2019-01-14 15:50:29,533 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2019-01-14 15:50:29,543 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Using a shared selector for servlet write/read
+2019-01-14 15:50:29,558 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2019-01-14 15:50:29,565 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started BootcampApplication in 6.484 seconds (JVM running for 7.106)
+2019-01-14 15:50:29,569 INFO com.mitrais.study.bootcamp.BootcampApplication [restartedMain] Application is ready...
+2019-01-14 15:50:41,843 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-01-14 15:50:41,843 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2019-01-14 15:50:41,851 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 7 ms
+2019-01-14 15:50:42,486 WARN org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-3] No mapping for GET /favicon.ico
+2019-01-14 15:50:44,074 WARN org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-5] No mapping for GET /favicon.ico
+2019-01-14 15:50:50,660 INFO org.hibernate.hql.internal.QueryTranslatorFactoryInitiator [http-nio-8080-exec-6] HHH000397: Using ASTQueryTranslatorFactory
+2019-01-14 15:50:50,750 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-6] 
+    select
+        person0_.id as id1_0_,
+        person0_.name as name2_0_,
+        person0_.password as password3_0_,
+        person0_.username as username4_0_,
+        person0_.version as version5_0_ 
+    from
+        person person0_ 
+    where
+        person0_.username=?
+2019-01-14 15:50:50,753 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-6] binding parameter [1] as [VARCHAR] - [rudiwijaya]
+2019-01-14 15:50:50,776 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-6] 
+    select
+        roleids0_.person_id as person_i1_1_0_,
+        roleids0_.role_ids as role_ids2_1_0_ 
+    from
+        person_role_ids roleids0_ 
+    where
+        roleids0_.person_id=?
+2019-01-14 15:50:50,778 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-6] binding parameter [1] as [BIGINT] - [1]
+2019-01-14 15:50:50,910 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-7] 
+    select
+        distinct person0_.username as col_0_0_ 
+    from
+        person person0_ 
+    where
+        person0_.id=1
+2019-01-14 15:50:55,974 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-9] 
+    select
+        distinct count(distinct person0_.id) as col_0_0_ 
+    from
+        person person0_
+2019-01-14 15:50:55,981 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-9] 
+    select
+        distinct person0_.id as id1_0_,
+        person0_.name as name2_0_,
+        person0_.password as password3_0_,
+        person0_.username as username4_0_,
+        person0_.version as version5_0_ 
+    from
+        person person0_ limit ?
+2019-01-14 15:50:55,984 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-9] 
+    select
+        roleids0_.person_id as person_i1_1_0_,
+        roleids0_.role_ids as role_ids2_1_0_ 
+    from
+        person_role_ids roleids0_ 
+    where
+        roleids0_.person_id=?
+2019-01-14 15:50:55,984 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-9] binding parameter [1] as [BIGINT] - [13]
+2019-01-14 15:50:55,985 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-9] 
+    select
+        roleids0_.person_id as person_i1_1_0_,
+        roleids0_.role_ids as role_ids2_1_0_ 
+    from
+        person_role_ids roleids0_ 
+    where
+        roleids0_.person_id=?
+2019-01-14 15:50:55,986 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-9] binding parameter [1] as [BIGINT] - [5]
+2019-01-14 15:50:55,987 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-9] 
+    select
+        roleids0_.person_id as person_i1_1_0_,
+        roleids0_.role_ids as role_ids2_1_0_ 
+    from
+        person_role_ids roleids0_ 
+    where
+        roleids0_.person_id=?
+2019-01-14 15:50:55,987 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-9] binding parameter [1] as [BIGINT] - [6]
+2019-01-14 15:50:55,988 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-9] 
+    select
+        roleids0_.person_id as person_i1_1_0_,
+        roleids0_.role_ids as role_ids2_1_0_ 
+    from
+        person_role_ids roleids0_ 
+    where
+        roleids0_.person_id=?
+2019-01-14 15:50:55,989 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-9] binding parameter [1] as [BIGINT] - [16]
+2019-01-14 15:50:55,990 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-9] 
+    select
+        roleids0_.person_id as person_i1_1_0_,
+        roleids0_.role_ids as role_ids2_1_0_ 
+    from
+        person_role_ids roleids0_ 
+    where
+        roleids0_.person_id=?
+2019-01-14 15:50:55,990 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-9] binding parameter [1] as [BIGINT] - [12]
+2019-01-14 15:50:55,991 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-9] 
+    select
+        roleids0_.person_id as person_i1_1_0_,
+        roleids0_.role_ids as role_ids2_1_0_ 
+    from
+        person_role_ids roleids0_ 
+    where
+        roleids0_.person_id=?
+2019-01-14 15:50:55,992 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-9] binding parameter [1] as [BIGINT] - [8]
+2019-01-14 15:50:55,993 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-9] 
+    select
+        roleids0_.person_id as person_i1_1_0_,
+        roleids0_.role_ids as role_ids2_1_0_ 
+    from
+        person_role_ids roleids0_ 
+    where
+        roleids0_.person_id=?
+2019-01-14 15:50:55,993 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-9] binding parameter [1] as [BIGINT] - [10]
+2019-01-14 15:50:55,995 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-9] 
+    select
+        roleids0_.person_id as person_i1_1_0_,
+        roleids0_.role_ids as role_ids2_1_0_ 
+    from
+        person_role_ids roleids0_ 
+    where
+        roleids0_.person_id=?
+2019-01-14 15:50:55,995 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-9] binding parameter [1] as [BIGINT] - [7]
+2019-01-14 15:50:55,996 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-9] 
+    select
+        roleids0_.person_id as person_i1_1_0_,
+        roleids0_.role_ids as role_ids2_1_0_ 
+    from
+        person_role_ids roleids0_ 
+    where
+        roleids0_.person_id=?
+2019-01-14 15:50:55,997 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-9] binding parameter [1] as [BIGINT] - [9]
+2019-01-14 15:50:55,998 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-9] 
+    select
+        roleids0_.person_id as person_i1_1_0_,
+        roleids0_.role_ids as role_ids2_1_0_ 
+    from
+        person_role_ids roleids0_ 
+    where
+        roleids0_.person_id=?
+2019-01-14 15:50:55,999 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-9] binding parameter [1] as [BIGINT] - [17]
+2019-01-14 15:50:55,999 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-9] 
+    select
+        roleids0_.person_id as person_i1_1_0_,
+        roleids0_.role_ids as role_ids2_1_0_ 
+    from
+        person_role_ids roleids0_ 
+    where
+        roleids0_.person_id=?
+2019-01-14 15:50:56,000 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-9] binding parameter [1] as [BIGINT] - [1]
+2019-01-14 15:50:56,000 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-9] 
+    select
+        roleids0_.person_id as person_i1_1_0_,
+        roleids0_.role_ids as role_ids2_1_0_ 
+    from
+        person_role_ids roleids0_ 
+    where
+        roleids0_.person_id=?
+2019-01-14 15:50:56,001 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-9] binding parameter [1] as [BIGINT] - [14]
+2019-01-14 15:50:56,001 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-9] 
+    select
+        roleids0_.person_id as person_i1_1_0_,
+        roleids0_.role_ids as role_ids2_1_0_ 
+    from
+        person_role_ids roleids0_ 
+    where
+        roleids0_.person_id=?
+2019-01-14 15:50:56,002 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-9] binding parameter [1] as [BIGINT] - [15]
+2019-01-14 15:50:56,002 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-9] 
+    select
+        roleids0_.person_id as person_i1_1_0_,
+        roleids0_.role_ids as role_ids2_1_0_ 
+    from
+        person_role_ids roleids0_ 
+    where
+        roleids0_.person_id=?
+2019-01-14 15:50:56,002 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-9] binding parameter [1] as [BIGINT] - [11]
+2019-01-14 15:50:56,003 DEBUG com.mitrais.study.bootcamp.data.jpa.JpaRepositoryBase [http-nio-8080-exec-9] FindAll Person returned 14 of 14 rows (paged by Page request [number: 0, size 20, sort: UNSORTED])
+2019-01-14 15:51:46,421 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-7] Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-01-14 15:51:46,424 INFO com.zaxxer.hikari.HikariDataSource [Thread-7] HikariPool-1 - Shutdown initiated...
+2019-01-14 15:51:46,427 INFO com.zaxxer.hikari.HikariDataSource [Thread-7] HikariPool-1 - Shutdown completed.
+2019-01-14 15:51:46,772 INFO com.mitrais.study.bootcamp.BootcampApplication [restartedMain] Starting application...
+2019-01-14 15:51:46,880 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting BootcampApplication on MTPC8045 with PID 15268 (D:\git\bootcamp\target\classes started by Rudi_W144 in D:\git\bootcamp)
+2019-01-14 15:51:46,881 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.1.1.RELEASE, Spring v5.1.3.RELEASE
+2019-01-14 15:51:46,881 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2019-01-14 15:51:47,200 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-01-14 15:51:47,224 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 24ms. Found 2 repository interfaces.
+2019-01-14 15:51:47,304 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9618e607] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-14 15:51:47,305 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$15993339] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-14 15:51:47,377 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2019-01-14 15:51:47,377 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2019-01-14 15:51:47,378 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2019-01-14 15:51:47,378 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet Engine: Apache Tomcat/9.0.13
+2019-01-14 15:51:47,392 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2019-01-14 15:51:47,392 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 509 ms
+2019-01-14 15:51:47,441 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Starting...
+2019-01-14 15:51:47,461 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Start completed.
+2019-01-14 15:51:47,591 INFO liquibase.logging.core.Slf4jLogger [restartedMain] SELECT COUNT(*) FROM public.databasechangeloglock
+2019-01-14 15:51:47,592 INFO liquibase.logging.core.Slf4jLogger [restartedMain] SELECT COUNT(*) FROM public.databasechangeloglock
+2019-01-14 15:51:47,593 INFO liquibase.logging.core.Slf4jLogger [restartedMain] SELECT LOCKED FROM public.databasechangeloglock WHERE ID=1
+2019-01-14 15:51:47,595 INFO liquibase.logging.core.Slf4jLogger [restartedMain] Successfully acquired change log lock
+2019-01-14 15:51:47,625 INFO liquibase.logging.core.Slf4jLogger [restartedMain] SELECT MD5SUM FROM public.databasechangelog WHERE MD5SUM IS NOT NULL LIMIT 1
+2019-01-14 15:51:47,626 INFO liquibase.logging.core.Slf4jLogger [restartedMain] SELECT COUNT(*) FROM public.databasechangelog
+2019-01-14 15:51:47,627 INFO liquibase.logging.core.Slf4jLogger [restartedMain] Reading from public.databasechangelog
+2019-01-14 15:51:47,627 INFO liquibase.logging.core.Slf4jLogger [restartedMain] SELECT * FROM public.databasechangelog ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+2019-01-14 15:51:47,633 INFO liquibase.logging.core.Slf4jLogger [restartedMain] Successfully released change log lock
+2019-01-14 15:51:47,661 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-01-14 15:51:47,674 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL82Dialect
+2019-01-14 15:51:47,742 INFO org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl [restartedMain] HHH000421: Disabling contextual LOB creation as hibernate.jdbc.lob.non_contextual_creation is true
+2019-01-14 15:51:47,743 INFO org.hibernate.type.BasicTypeRegistry [restartedMain] HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@509e599b
+2019-01-14 15:51:47,787 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-01-14 15:51:47,944 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-01-14 15:51:47,985 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2cd9fdba, org.springframework.security.web.context.SecurityContextPersistenceFilter@525e9357, org.springframework.security.web.context.SecurityContextPersistenceFilter@6afa7932, org.springframework.security.web.header.HeaderWriterFilter@7b9b4c9d, org.springframework.security.web.authentication.logout.LogoutFilter@4268b43b, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@33e783a8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1272427a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@33ac1b0d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3a129388, org.springframework.security.web.session.SessionManagementFilter@6a1364df, org.springframework.security.web.access.ExceptionTranslationFilter@6a825e41, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@20e0662b]
+2019-01-14 15:51:48,013 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2019-01-14 15:51:48,027 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2019-01-14 15:51:48,028 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Using a shared selector for servlet write/read
+2019-01-14 15:51:48,031 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2019-01-14 15:51:48,031 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started BootcampApplication in 1.254 seconds (JVM running for 85.572)
+2019-01-14 15:51:48,034 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2019-01-14 15:51:48,034 INFO com.mitrais.study.bootcamp.BootcampApplication [restartedMain] Application is ready...
+2019-01-14 15:51:49,037 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-01-14 15:51:49,038 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2019-01-14 15:51:49,043 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 4 ms
+2019-01-14 15:52:01,127 DEBUG com.mitrais.study.bootcamp.data.jpa.JpaRepositoryBase [http-nio-8080-exec-3] Adding 1 Person entities
+2019-01-14 15:52:01,141 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-3] 
+    insert 
+    into
+        person
+        (name, password, username, version) 
+    values
+        (?, ?, ?, ?)
+2019-01-14 15:52:01,142 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-3] binding parameter [1] as [VARCHAR] - [Willshan Suanto]
+2019-01-14 15:52:01,143 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-3] binding parameter [2] as [VARCHAR] - [{bcrypt}$2a$10$Xil7sU7dWLo6KJJwKSUv/uyhb2DXKcyYfpCC.oIeaoF09aY8/1g1q]
+2019-01-14 15:52:01,143 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-3] binding parameter [3] as [VARCHAR] - [icen]
+2019-01-14 15:52:01,143 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-3] binding parameter [4] as [BIGINT] - [0]
+2019-01-14 15:52:01,146 DEBUG com.mitrais.study.bootcamp.data.jpa.JpaRepositoryBase [http-nio-8080-exec-3] Added 1 Person entities
+2019-01-14 15:52:01,163 INFO org.hibernate.hql.internal.QueryTranslatorFactoryInitiator [http-nio-8080-exec-4] HHH000397: Using ASTQueryTranslatorFactory
+2019-01-14 15:52:01,165 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-4] 
+    select
+        distinct count(distinct person0_.id) as col_0_0_ 
+    from
+        person person0_
+2019-01-14 15:52:01,169 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-4] 
+    select
+        distinct person0_.id as id1_0_,
+        person0_.name as name2_0_,
+        person0_.password as password3_0_,
+        person0_.username as username4_0_,
+        person0_.version as version5_0_ 
+    from
+        person person0_ limit ?
+2019-01-14 15:52:01,172 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-4] 
+    select
+        roleids0_.person_id as person_i1_1_0_,
+        roleids0_.role_ids as role_ids2_1_0_ 
+    from
+        person_role_ids roleids0_ 
+    where
+        roleids0_.person_id=?
+2019-01-14 15:52:01,172 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-4] binding parameter [1] as [BIGINT] - [13]
+2019-01-14 15:52:01,174 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-4] 
+    select
+        roleids0_.person_id as person_i1_1_0_,
+        roleids0_.role_ids as role_ids2_1_0_ 
+    from
+        person_role_ids roleids0_ 
+    where
+        roleids0_.person_id=?
+2019-01-14 15:52:01,174 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-4] binding parameter [1] as [BIGINT] - [5]
+2019-01-14 15:52:01,175 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-4] 
+    select
+        roleids0_.person_id as person_i1_1_0_,
+        roleids0_.role_ids as role_ids2_1_0_ 
+    from
+        person_role_ids roleids0_ 
+    where
+        roleids0_.person_id=?
+2019-01-14 15:52:01,175 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-4] binding parameter [1] as [BIGINT] - [6]
+2019-01-14 15:52:01,176 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-4] 
+    select
+        roleids0_.person_id as person_i1_1_0_,
+        roleids0_.role_ids as role_ids2_1_0_ 
+    from
+        person_role_ids roleids0_ 
+    where
+        roleids0_.person_id=?
+2019-01-14 15:52:01,177 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-4] binding parameter [1] as [BIGINT] - [16]
+2019-01-14 15:52:01,177 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-4] 
+    select
+        roleids0_.person_id as person_i1_1_0_,
+        roleids0_.role_ids as role_ids2_1_0_ 
+    from
+        person_role_ids roleids0_ 
+    where
+        roleids0_.person_id=?
+2019-01-14 15:52:01,178 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-4] binding parameter [1] as [BIGINT] - [12]
+2019-01-14 15:52:01,179 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-4] 
+    select
+        roleids0_.person_id as person_i1_1_0_,
+        roleids0_.role_ids as role_ids2_1_0_ 
+    from
+        person_role_ids roleids0_ 
+    where
+        roleids0_.person_id=?
+2019-01-14 15:52:01,179 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-4] binding parameter [1] as [BIGINT] - [8]
+2019-01-14 15:52:01,180 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-4] 
+    select
+        roleids0_.person_id as person_i1_1_0_,
+        roleids0_.role_ids as role_ids2_1_0_ 
+    from
+        person_role_ids roleids0_ 
+    where
+        roleids0_.person_id=?
+2019-01-14 15:52:01,180 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-4] binding parameter [1] as [BIGINT] - [10]
+2019-01-14 15:52:01,181 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-4] 
+    select
+        roleids0_.person_id as person_i1_1_0_,
+        roleids0_.role_ids as role_ids2_1_0_ 
+    from
+        person_role_ids roleids0_ 
+    where
+        roleids0_.person_id=?
+2019-01-14 15:52:01,181 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-4] binding parameter [1] as [BIGINT] - [7]
+2019-01-14 15:52:01,182 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-4] 
+    select
+        roleids0_.person_id as person_i1_1_0_,
+        roleids0_.role_ids as role_ids2_1_0_ 
+    from
+        person_role_ids roleids0_ 
+    where
+        roleids0_.person_id=?
+2019-01-14 15:52:01,182 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-4] binding parameter [1] as [BIGINT] - [9]
+2019-01-14 15:52:01,183 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-4] 
+    select
+        roleids0_.person_id as person_i1_1_0_,
+        roleids0_.role_ids as role_ids2_1_0_ 
+    from
+        person_role_ids roleids0_ 
+    where
+        roleids0_.person_id=?
+2019-01-14 15:52:01,184 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-4] binding parameter [1] as [BIGINT] - [18]
+2019-01-14 15:52:01,184 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-4] 
+    select
+        roleids0_.person_id as person_i1_1_0_,
+        roleids0_.role_ids as role_ids2_1_0_ 
+    from
+        person_role_ids roleids0_ 
+    where
+        roleids0_.person_id=?
+2019-01-14 15:52:01,185 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-4] binding parameter [1] as [BIGINT] - [17]
+2019-01-14 15:52:01,186 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-4] 
+    select
+        roleids0_.person_id as person_i1_1_0_,
+        roleids0_.role_ids as role_ids2_1_0_ 
+    from
+        person_role_ids roleids0_ 
+    where
+        roleids0_.person_id=?
+2019-01-14 15:52:01,186 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-4] binding parameter [1] as [BIGINT] - [1]
+2019-01-14 15:52:01,187 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-4] 
+    select
+        roleids0_.person_id as person_i1_1_0_,
+        roleids0_.role_ids as role_ids2_1_0_ 
+    from
+        person_role_ids roleids0_ 
+    where
+        roleids0_.person_id=?
+2019-01-14 15:52:01,187 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-4] binding parameter [1] as [BIGINT] - [14]
+2019-01-14 15:52:01,188 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-4] 
+    select
+        roleids0_.person_id as person_i1_1_0_,
+        roleids0_.role_ids as role_ids2_1_0_ 
+    from
+        person_role_ids roleids0_ 
+    where
+        roleids0_.person_id=?
+2019-01-14 15:52:01,188 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-4] binding parameter [1] as [BIGINT] - [15]
+2019-01-14 15:52:01,189 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-4] 
+    select
+        roleids0_.person_id as person_i1_1_0_,
+        roleids0_.role_ids as role_ids2_1_0_ 
+    from
+        person_role_ids roleids0_ 
+    where
+        roleids0_.person_id=?
+2019-01-14 15:52:01,189 TRACE org.hibernate.type.descriptor.sql.BasicBinder [http-nio-8080-exec-4] binding parameter [1] as [BIGINT] - [11]
+2019-01-14 15:52:01,190 DEBUG com.mitrais.study.bootcamp.data.jpa.JpaRepositoryBase [http-nio-8080-exec-4] FindAll Person returned 15 of 15 rows (paged by Page request [number: 0, size 20, sort: UNSORTED])
+2019-01-14 15:52:01,515 WARN org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-5] No mapping for GET /favicon.ico
+2019-01-14 15:52:28,907 DEBUG org.hibernate.engine.jdbc.spi.SqlStatementLogger [http-nio-8080-exec-8] 
+    select
+        distinct person0_.username as col_0_0_ 
+    from
+        person person0_ 
+    where
+        person0_.id=1

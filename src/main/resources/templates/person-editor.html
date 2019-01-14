@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Editor</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<div class="container">
+    <div th:if="${action} == 'ADD'">
+        <span th:text="'Insert New Person '"></span>
+    </div>
+    <div th:if="${action} == 'MODIFY'">
+        <span th:text="'Edit Person: ' + ${person.username}"></span>
+    </div>
+
+    <form  th:action="@{/secure/person/save}" th:method="${action} != 'MODIFY' ? PUT : POST" modelAttribute="person" th:object="${person}">
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" th:field="*{username}" id="username" placeholder="Username" class="form-control">
+            <span th:if="${#fields.hasErrors('username')}" th:errors="*{username}"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" th:field="*{name}" id="name" placeholder="Name" class="form-control">
+            <span th:if="${#fields.hasErrors('name')}" th:errors="*{name}"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" th:field="*{rawPassword}" id="password" placeholder="Password" class="form-control">
+            <span th:if="${#fields.hasErrors('rawPassword')}" th:errors="*{rawPassword}"></span>
+        </div>
+
+        <input type="submit" class="btn btn-primary" value="Save">
+    </form>
+</div>
+
+</body>
+
+</html>
