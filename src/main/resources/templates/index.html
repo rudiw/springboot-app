@@ -24,6 +24,9 @@
     <div th:if="${user.authenticated} == true">
         <span th:text="'Hello ' + ${user.username}"></span>
     </div>
+    <div th:if="${user.authenticated} == true">
+        <a href="secure.html" th:href="@{/secure}">Go to Secured Page</a>
+    </div>
 
 
 </div>
