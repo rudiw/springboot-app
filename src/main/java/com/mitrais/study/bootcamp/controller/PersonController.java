@@ -17,6 +17,7 @@ import org.springframework.data.web.PagedResourcesAssembler;
 import org.springframework.hateoas.ExposesResourceFor;
 import org.springframework.hateoas.PagedResources;
 import org.springframework.hateoas.Resource;
+import org.springframework.hateoas.ResourceAssembler;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -61,7 +62,7 @@ public class PersonController {
     public ResponseEntity<PagedResources> findAll(@PageableDefault(size = 10) final Pageable pageable) {
         final Page<Person> page = personService.findAll(pageable);
 
-        final PagedResources<Resource<Person>> resources = personPagedResourcesAssembler.toResource(page);
+        final PagedResources<PersonResource> resources = personPagedResourcesAssembler.toResource(page, personAssembler);
         return new ResponseEntity<PagedResources>(resources, HttpStatus.OK);
     }
 

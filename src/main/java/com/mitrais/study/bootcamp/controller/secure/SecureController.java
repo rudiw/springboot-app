@@ -15,7 +15,4 @@ public class SecureController {
         return "Welcome in Secure Controller!";
     }
 
-
-
-
 }
