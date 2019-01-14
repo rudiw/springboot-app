@@ -4,6 +4,8 @@ import com.google.common.base.Throwables;
 import com.mitrais.study.bootcamp.config.rs.PersonResource;
 import com.mitrais.study.bootcamp.dao.PersonDao;
 import com.mitrais.study.bootcamp.model.rs.Person;
+import com.mitrais.study.bootcamp.service.PersonException;
+import com.mitrais.study.bootcamp.service.PersonService;
 import org.hibernate.exception.ConstraintViolationException;
 import org.hibernate.exception.GenericJDBCException;
 import org.hibernate.exception.LockAcquisitionException;
@@ -18,6 +20,7 @@ import org.springframework.data.web.PagedResourcesAssembler;
 import org.springframework.hateoas.PagedResources;
 import org.springframework.hateoas.Resource;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.*;
@@ -37,54 +40,58 @@ public class PersonController {
     private static final Logger log = LoggerFactory.getLogger(PersonController.class);
 
     @Inject
-    private PersonDao personDao;
+    private PersonService personService;
     @Inject
     private PersonAssembler personAssembler;
     @Autowired
     private PagedResourcesAssembler<Person> personPagedResourcesAssembler;
-    @Inject
-    private PasswordEncoder passwordEncoder;
+
 
     @RequestMapping(value = "/hello/{name}", method = RequestMethod.GET)
     public String helloName(@PathVariable(value = "name", required = true) final String upName) {
         return "Hello " + upName;
     }
 
-    @RequestMapping(value = "/username/{username}", consumes = "application/json", produces = "application/json", method = RequestMethod.GET)
+    @RequestMapping(value = "/username/{username}", consumes = MediaType.APPLICATION_JSON_UTF8_VALUE, produces = MediaType.APPLICATION_JSON_UTF8_VALUE, method = RequestMethod.GET)
     public ResponseEntity<Resource<Person>> findOne(@PathVariable(value = "username", required = true) final String upUsername) {
-        final com.mitrais.study.bootcamp.model.jpa.Person jpaPerson = personDao.findOneByUsername(upUsername);
-        if (jpaPerson == null) {
+        final Person person = personService.findOne(upUsername);
+        if (person == null) {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
-        final Person person = new Person().copy(jpaPerson);
         final PersonResource res = personAssembler.toResource(person);
         return new ResponseEntity<>(res, HttpStatus.FOUND);
     }
 
-    @RequestMapping(value = "/all", consumes = "application/json", produces = "application/json", method = RequestMethod.GET)
+    @RequestMapping(value = "/all", consumes = MediaType.APPLICATION_JSON_UTF8_VALUE, produces = MediaType.APPLICATION_JSON_UTF8_VALUE, method = RequestMethod.GET)
     public ResponseEntity<PagedResources> findAll(@PageableDefault(size = 10) final Pageable pageable) {
-        final Page<com.mitrais.study.bootcamp.model.jpa.Person> page = personDao.findAll(pageable);
-        final List<Person> people = page.getContent().stream().map(new Function<com.mitrais.study.bootcamp.model.jpa.Person, Person>() {
-            @Override
-            public Person apply(com.mitrais.study.bootcamp.model.jpa.Person jpaPerson) {
-                return new Person().copy(jpaPerson);
-            }
-        }).collect(Collectors.toList());
+        final Page<Person> page = personService.findAll(pageable);
 
-        final PagedResources<Resource<Person>> resources =
-                personPagedResourcesAssembler.toResource(new PageImpl<>(people, pageable, page.getTotalElements()));
+        final PagedResources<Resource<Person>> resources = personPagedResourcesAssembler.toResource(page);
         return new ResponseEntity<PagedResources>(resources, HttpStatus.OK);
     }
 
-    @RequestMapping(value = "/add", consumes = "application/json", produces = "application/json", method = RequestMethod.POST)
+    @RequestMapping(value = "/add", consumes = MediaType.APPLICATION_JSON_UTF8_VALUE, produces = MediaType.APPLICATION_JSON_UTF8_VALUE, method = RequestMethod.POST)
     public ResponseEntity<PersonResource> add(@RequestBody(required = true) Person upPerson) {
         try {
-            final com.mitrais.study.bootcamp.model.jpa.Person jpaPerson =
-                    new com.mitrais.study.bootcamp.model.jpa.Person().copy(upPerson);
-            jpaPerson.setPassword(passwordEncoder.encode(jpaPerson.getPassword()));
-            final com.mitrais.study.bootcamp.model.jpa.Person jpaAdd = personDao.add(jpaPerson);
+            final Person person = personService.add(upPerson);
+            final PersonResource res = personAssembler.toResource(person);
+            return new ResponseEntity<>(res, HttpStatus.CREATED);
+        } catch (Exception e) {
+            log.error(String.format("Failed to add person: %s", e), e);
+            final List<Throwable> causes = Throwables.getCausalChain(e);
+            if (causes.stream().anyMatch((it) -> it instanceof LockAcquisitionException) || causes.stream().anyMatch((it) -> it instanceof ConstraintViolationException)) {
+                return new ResponseEntity<>(HttpStatus.CONFLICT);
+            } else {
+                return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+            }
+        }
+    }
 
-            final Person person = new Person().copy(jpaAdd);
+    @RequestMapping(value = "/modify", consumes = MediaType.APPLICATION_JSON_UTF8_VALUE, produces = MediaType.APPLICATION_JSON_UTF8_VALUE, method = RequestMethod.PUT)
+    public ResponseEntity<PersonResource> modify(@RequestBody(required = true) Person upPerson) {
+        try {
+            final Person person = personService.modify(upPerson.getUsername(), upPerson);
+
             final PersonResource res = personAssembler.toResource(person);
             return new ResponseEntity<>(res, HttpStatus.CREATED);
         } catch (Exception e) {

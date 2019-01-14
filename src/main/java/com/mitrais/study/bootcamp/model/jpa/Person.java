@@ -1,5 +1,7 @@
 package com.mitrais.study.bootcamp.model.jpa;
 
+import com.mitrais.study.bootcamp.service.FormAction;
+
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.HashSet;
@@ -43,10 +45,17 @@ public class Person implements Serializable {
         super();
     }
 
-    public Person copy(com.mitrais.study.bootcamp.model.rs.Person rs) {
+    public Person insert(final com.mitrais.study.bootcamp.model.rs.Person rs) {
         this.name = rs.getName();
         this.password = rs.getRawPassword();
         this.username = rs.getUsername();
+
+        return this;
+    }
+
+    public Person update(final com.mitrais.study.bootcamp.model.rs.Person rs) {
+        this.name = rs.getName();
+        this.password = rs.getRawPassword();
 
         return this;
     }

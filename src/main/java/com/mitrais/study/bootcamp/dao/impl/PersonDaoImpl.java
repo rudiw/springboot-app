@@ -9,7 +9,7 @@ import javax.annotation.Nullable;
 import javax.persistence.NoResultException;
 import javax.persistence.TypedQuery;
 
-public class PersonDaoImpl extends JpaRepositoryBase<Person, Integer> implements PersonDao {
+public class PersonDaoImpl extends JpaRepositoryBase<Person, Long> implements PersonDao {
 
     public PersonDaoImpl() {
         super(Person.class);

@@ -8,7 +8,7 @@ import javax.annotation.Nullable;
 /**
  * @author Rudi_W144
  */
-public interface PersonDao extends MyPagingAndSortingRepository<Person, Integer> {
+public interface PersonDao extends MyPagingAndSortingRepository<Person, Long> {
 
     /**
      *
