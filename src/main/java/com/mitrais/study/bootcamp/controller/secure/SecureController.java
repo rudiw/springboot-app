@@ -67,7 +67,6 @@ public class SecureController {
         return "person-editor";
     }
 
-//    @PostMapping(value = "/secure/person/save")
     @RequestMapping(value = "/secure/person/save", method = RequestMethod.POST)
     public String add(@ModelAttribute(value = "person") final Person upPerson,
                       final BindingResult result) {
@@ -90,7 +89,6 @@ public class SecureController {
         }
     }
 
-//    @PutMapping(value = "/secure/person/save")
     @RequestMapping(value = "/secure/person/save", method = RequestMethod.PUT)
     public String modify(@ModelAttribute(value = "person") final Person upPerson,
                          final BindingResult result) {
@@ -111,4 +109,22 @@ public class SecureController {
             return "/secure/person/modify/" + upPerson.getUsername();
         }
     }
+
+    @RequestMapping(value = "/secure/person/remove/{username}", method = RequestMethod.DELETE)
+    public String remove(@PathVariable(value = "username") final String upUsername) {
+        log.debug("Trying to remove person by username '{}'", upUsername);
+        try {
+            personService.remove(upUsername);
+
+            return "redirect:/secure/people";
+        } catch (Exception e) {
+            log.error(String.format("Failed to remove person: %s", e), e);
+            final List<Throwable> causes = Throwables.getCausalChain(e);
+            if (causes.stream().anyMatch((it) -> it instanceof LockAcquisitionException) || causes.stream().anyMatch((it) -> it instanceof ConstraintViolationException)) {
+            } else {
+            }
+            return "/secure/people";
+        }
+    }
+
 }

@@ -49,7 +49,11 @@ public class PersonController {
     private AuthenticationManager authMgr;
 
     @GetMapping(value = "/signup")
-    public String showSignUpPage(@ModelAttribute(value = "person") Person upPerson) {
+    public String showSignUpPage(@ModelAttribute(value = "person") Person upPerson,
+                                 final Authentication auth) {
+        if (auth != null && auth.isAuthenticated()) {
+            return "redirect:/";
+        }
         return "sign-up";
     }
 
@@ -81,7 +85,10 @@ public class PersonController {
     }
 
     @GetMapping(value = "/signin")
-    public String showSignInPage(@ModelAttribute(value = "user") UserInfo upUser) {
+    public String showSignInPage(@ModelAttribute(value = "user") UserInfo upUser, final Authentication auth) {
+        if (auth != null && auth.isAuthenticated()) {
+            return "redirect:/";
+        }
         return "sign-in";
     }
 
