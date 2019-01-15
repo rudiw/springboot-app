@@ -13,17 +13,19 @@
 <body>
 
 <div class="container">
-    <div th:if="${action} == 'ADD'">
+    <div th:if="${action.name() == 'ADD'}">
         <span th:text="'Insert New Person '"></span>
     </div>
-    <div th:if="${action} == 'MODIFY'">
+    <div th:if="${action.name() == 'MODIFY'}">
         <span th:text="'Edit Person: ' + ${person.username}"></span>
     </div>
 
-    <form  th:action="@{/secure/person/save}" th:method="${action} != 'MODIFY' ? PUT : POST" modelAttribute="person" th:object="${person}">
-        <div class="form-group">
+    <form th:action="@{/secure/person/save}"
+          th:method="${action.name()} == 'ADD' ? POST : PUT" modelAttribute="person" th:object="${person}">
+
+        <div th:style="${action.name()} == 'ADD' ? 'display:block' : 'display:none'" class="form-group">
             <label for="username">Username</label>
-            <span th:text="*{username}" id="username" class="form-control"></span>
+            <input type="text" th:field="*{username}" id="username" placeholder="Username" class="form-control">
             <span th:if="${#fields.hasErrors('username')}" th:errors="*{username}"></span>
         </div>
 

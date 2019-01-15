@@ -50,7 +50,7 @@ public class SecureController {
     @GetMapping(value = "/secure/person/add")
     public String showAddPage(final Model model,
                               @ModelAttribute(value = "person") Person upPerson) {
-        model.addAttribute("action", FormAction.ADD.name());
+        model.addAttribute("action", FormAction.ADD);
         return "person-editor";
     }
 
@@ -61,14 +61,18 @@ public class SecureController {
         final Person person = Preconditions.checkNotNull(personService.findOne(upUsername),
                 "Person must not be null by username '%s'", upUsername);
 
-        model.addAttribute("action", FormAction.MODIFY.name());
+        log.debug("action name: '{}'", FormAction.MODIFY.name());
+        model.addAttribute("action", FormAction.MODIFY);
         model.addAttribute("person", person);
         return "person-editor";
     }
 
-    @PostMapping(value = "/secure/person/save")
+//    @PostMapping(value = "/secure/person/save")
+    @RequestMapping(value = "/secure/person/save", method = RequestMethod.POST)
     public String add(@ModelAttribute(value = "person") final Person upPerson,
                       final BindingResult result) {
+        log.debug("Trying to add person '{}', with rawPwd '{}'", upPerson, upPerson.getRawPassword());
+
         if (result.hasErrors()) {
             return "/secure/person/add";
         }
@@ -86,9 +90,11 @@ public class SecureController {
         }
     }
 
-    @PutMapping(value = "/secure/person/save")
+//    @PutMapping(value = "/secure/person/save")
+    @RequestMapping(value = "/secure/person/save", method = RequestMethod.PUT)
     public String modify(@ModelAttribute(value = "person") final Person upPerson,
                          final BindingResult result) {
+        log.debug("Trying to modify person '{}', with rawPwd '{}'", upPerson, upPerson.getRawPassword());
         if (result.hasErrors()) {
             return "/secure/person/modify/" + upPerson.getUsername();
         }
