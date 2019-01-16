@@ -15,6 +15,8 @@ public class BootcampApplication {
 		log.info("Starting application...");
 		final ConfigurableApplicationContext context = SpringApplication.run(BootcampApplication.class, args);
 		log.info("Application is ready...");
+
+		log.debug("holaaa");
 	}
 
 }
