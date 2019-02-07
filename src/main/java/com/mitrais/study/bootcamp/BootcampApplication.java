@@ -1,5 +1,6 @@
 package com.mitrais.study.bootcamp;
 
+import com.mitrais.study.bootcamp.data.jpa.JpaRepositoryBase;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
@@ -17,6 +18,7 @@ public class BootcampApplication {
 		log.info("Application is ready...");
 
 		log.debug("holaaa");
+
 	}
 
 }
