@@ -4,7 +4,6 @@ import com.google.common.base.Throwables;
 import com.mitrais.study.bootcamp.config.rs.PersonAssembler;
 import com.mitrais.study.bootcamp.model.rs.Person;
 import com.mitrais.study.bootcamp.model.rs.UserInfo;
-import com.mitrais.study.bootcamp.service.FormAction;
 import com.mitrais.study.bootcamp.service.PersonService;
 import org.hibernate.exception.ConstraintViolationException;
 import org.hibernate.exception.LockAcquisitionException;
@@ -24,7 +23,6 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
 
 import javax.inject.Inject;
 import javax.servlet.http.HttpServletRequest;

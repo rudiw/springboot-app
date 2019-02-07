@@ -1,11 +1,12 @@
 package com.mitrais.study.bootcamp;
 
-import com.mitrais.study.bootcamp.data.jpa.JpaRepositoryBase;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.context.annotation.Bean;
+import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
 public class BootcampApplication {
@@ -18,7 +19,11 @@ public class BootcampApplication {
 		log.info("Application is ready...");
 
 		log.debug("holaaa");
+	}
 
+	@Bean
+	public RestTemplate restTemplate() {
+		return new RestTemplate();
 	}
 
 }

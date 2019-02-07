@@ -81,6 +81,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .addFilter(basicAuthFilter())
                 .authorizeRequests()
                 .antMatchers("/").permitAll()
+//                .antMatchers("/cucumber/**").permitAll()
                 .antMatchers("/secure/**").authenticated()
                 .antMatchers("/admin/**").hasAnyRole("ADMIN")
                 .and().addFilter(new SecurityContextPersistenceFilter()).securityContext()
