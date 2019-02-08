@@ -15,7 +15,7 @@ public class StepDefsIntegrationTest extends SpringIntegrationTest {
         executeGet("http://localhost:8080/rest/cucumber/hello");
     }
 
-    @Then("^Client receives status code of (\\d+)$")
+    @Then("^Client receives status code of \"([^\"]*)\"$")
     public void getStatus(int statusCode) throws Throwable {
         System.out.println(String.format("Get Status"));
         final HttpStatus currentStatusCode = latestResponse.getTheResponse().getStatusCode();
@@ -23,10 +23,10 @@ public class StepDefsIntegrationTest extends SpringIntegrationTest {
                 latestResponse.getBody(), currentStatusCode.value(), Matchers.is(statusCode));
     }
 
-    @And("^Client receives (.+)$")
-    public void getBody(String version) throws Throwable {
+    @And("^Client receives \"([^\"]*)\"$")
+    public void getBody(String upBody) throws Throwable {
         System.out.println(String.format("Get body"));
-        Assert.assertThat(latestResponse.getBody(), Matchers.is(version));
+        Assert.assertThat(latestResponse.getBody(), Matchers.is(upBody));
     }
 
 }
